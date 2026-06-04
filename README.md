@@ -51,27 +51,33 @@ REST APIとは、「リソース（データ）」を「URL」で表し、「HTT
 
 ## 環境準備
 
-1. このリポジトリをcloneする
+このリポジトリには、Laravel 13プロジェクト（`sunrise-mall-api/`、API用ルーティング有効化済み）を用意してあります。
+cloneしたらすぐに課題を始められます。
+
+> 必要環境：PHP 8.3以上 / Composer
+
+1. このリポジトリをcloneし、依存パッケージをインストールする
 
    ```bash
    git clone git@github.com:Mahv3/laravel-api-kadai.git
-   cd laravel-api-kadai
+   cd laravel-api-kadai/sunrise-mall-api
+   composer install
    ```
 
-2. リポジトリ内に新規Laravelプロジェクトを作成する（Laravel 13 / PHP 8.3以上）
+2. 環境変数ファイルを作成し、アプリケーションキーを生成する
 
    ```bash
-   composer create-project laravel/laravel sunrise-mall-api
+   cp .env.example .env
+   php artisan key:generate
    ```
 
-3. API用ルーティングを有効化する（`routes/api.php` が生成されます）
+3. データベース（SQLite）を作成してマイグレーションを実行する
 
    ```bash
-   cd sunrise-mall-api
-   php artisan install:api
+   php artisan migrate
    ```
 
-   ※ `routes/api.php` に書いたルートには自動で `/api` プレフィックスが付きます。
+   ※ `database.sqlite が存在しません。作成しますか？` と聞かれたら `yes` を選択してください。
 
 4. 開発サーバーを起動し、ブラウザで `http://127.0.0.1:8000` にLaravelの初期画面が表示されることを確認する
 
@@ -82,9 +88,13 @@ REST APIとは、「リソース（データ）」を「URL」で表し、「HTT
    > ⚠️ `Address already in use` と表示された場合は、別のアプリがポート8000を使用しています。
    > `php artisan serve --port=8080` のように空いているポートを指定してください（以降のURLも読み替えてください）。
 
-5. ここまでを「環境構築」としてブランチを切り、mainに向けて最初のPRを作成する
+5. [Postman](https://www.postman.com/downloads/) をインストールし、アカウントを作成する
 
-6. [Postman](https://www.postman.com/downloads/) をインストールし、アカウントを作成する
+### 補足：このプロジェクトの初期状態について
+
+- `php artisan install:api` 実行済みのため、`routes/api.php` が存在します。ここに書いたルートには自動で `/api` プレフィックスが付きます
+- `.env` の `APP_FAKER_LOCALE=ja_JP` 設定済みのため、Fakerは日本語のダミーデータを生成します
+- Postmanコレクションのエクスポート先として、リポジトリ直下に `postman/` ディレクトリを用意しています
 
 ## データ仕様
 
@@ -106,7 +116,7 @@ REST APIとは、「リソース（データ）」を「URL」で表し、「HTT
 - マイグレーションでテーブルを作成すること
 - FactoryとSeederを用意し、**15件以上**のダミー店舗データを投入すること（フロア・カテゴリはばらけさせる）
 
-> 💡 `.env` に `APP_FAKER_LOCALE=ja_JP` を追加すると、Fakerが日本語のダミーデータ（会社名・文章など）を生成してくれます。
+> 💡 Fakerは日本語ロケール設定済み（`APP_FAKER_LOCALE=ja_JP`）なので、会社名や文章は日本語で生成されます。
 
 > 💡 **バリデーションを実装する際は、ここで定めたカラムの最大長と必ず一致させてください。**
 > Trelloアプリのレビューで指摘した「DBスキーマとバリデーション最大値の不整合」を思い出しましょう。
