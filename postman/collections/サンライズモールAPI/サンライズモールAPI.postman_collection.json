@@ -1,0 +1,1037 @@
+{
+  "info": {
+    "_postman_id": "7136f148-3f5e-4a12-9cb9-e029e247dfc7",
+    "name": "サンライズモールAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55519142",
+    "_collection_link": "https://go.postman.co/collection/55519142-7136f148-3f5e-4a12-9cb9-e029e247dfc7?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "課題1：店舗情報の参照API（JSON）",
+      "item": [
+        {
+          "name": "一覧取得（パラメータなし）",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "一覧取得（パラメータなし）",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 11:58:06 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"有限会社 伊藤 店\",\n            \"floor\": \"1F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"00357-4-8696\",\n            \"description\": \"氷山ひょう。みながらで包つつんだからあたしはよした。「大きく写うつくしどもあなた方は、あるいの見えましたとき、そっちや町の人のおかしいことができて赤い眼めの二本の木の枝えだにあなた方は、わかって女の。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"株式会社 喜嶋 店\",\n            \"floor\": \"1F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"01-0877-6647\",\n            \"description\": \"につかれたのでしたが、くるってらあ」「ほんとうこもぞくぞく出ていないようにこころがいました。ジョバンニは、もう、わたしかたちの岸きしのように立って僕ぼく、頬ほおはなぜかその霧きり強くなって今朝けさの。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 3,\n            \"name\": \"株式会社 斉藤 店\",\n            \"floor\": \"4F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"067-538-2274\",\n            \"description\": \"はいいました。ければいあかりとりとりとりと同じようなふうに窓まどからいまのとないのだ。中で決心けっしょうの三角標さんは」すぐ眼めはまるで細こまで、もう帰って、星のようすいしっぽがまた別べつのちょうが。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 4,\n            \"name\": \"有限会社 藤本 店\",\n            \"floor\": \"4F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"0298-65-6734\",\n            \"description\": \"のですか。わたれわたした。ジョバンニさんの柱はしのずうっとさせると耳に手を振ふりかが一つジョバンニはどこからずの鳥捕とりの大きなどは思わずそうか神かみさまに召めされて来くるのでしょうとしまいます。も。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 5,\n            \"name\": \"株式会社 松本 店\",\n            \"floor\": \"1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"080-2623-8162\",\n            \"description\": \"「ジョバンニのおした。ジョバンニにはたいだろう。ただおじぎをたべるにしてその小さな列車れって、手を入れて、電燈でんとう」二人ふたりが射さしています。私は必死ひっぱなことものを待まっているうちには熟じ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 6,\n            \"name\": \"株式会社 石田 店\",\n            \"floor\": \"2F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"04-4248-0120\",\n            \"description\": \"でも燃もやっぱりさっきのどくださいていました空のするとこには、その正面しょにまたことがったせいのは小さいわいのすぐみんなさん集あつまりを出す小さな望遠鏡ぼうに、月長石げった球たまらないしっかさんそく。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 7,\n            \"name\": \"株式会社 佐藤 店\",\n            \"floor\": \"3F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"080-9686-3863\",\n            \"description\": \"面しょうがついて、ぼくずいても気持きもちを出してもむだと言いおうとした。「さあ。聞かなけれどもぼく、それをかぶったの神かみさまでカムパネルラが女の子を見ているのでした。「ありが言いいましくなりました。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 8,\n            \"name\": \"有限会社 野村 店\",\n            \"floor\": \"5F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"08978-5-9213\",\n            \"description\": \"すにでもです、今日、牛乳ぎゅうの野原のはずもなく溶鉱炉ようなんべんきの十字架じゅうになってどしどうしてね、わずそうだん向むこうを通りに青や橙だいもいろいの活字かつかしだねえさんはまるで雪ゆきの、ほん。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 9,\n            \"name\": \"有限会社 大垣 店\",\n            \"floor\": \"3F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0570-165-132\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 10,\n            \"name\": \"株式会社 藤本 店\",\n            \"floor\": \"4F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0016-98-8529\",\n            \"description\": \"に会あいとうの席せきに降おりて来ました。ジョバンニもカムパネルラは、ほんとうも今晩こんな顔いろな国語で一ぺんに、ちらちらちらちらちらっしゃじょです。する。僕ぼくもう半分はんぶんも行ったくをはじめて、。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 11,\n            \"name\": \"有限会社 原田 店\",\n            \"floor\": \"1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"037-278-7737\",\n            \"description\": \"計とけいきなれませんでしょうの席せきの通りだしてうなすきが、お早う」ジョバンニには、もうつくして、そこに大きな二つのちを見ました。ジョバンニもカムパネルラたちに、〔プリオシン海岸かわらい小さくらい前。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 12,\n            \"name\": \"株式会社 宮沢 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0646-96-4779\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 13,\n            \"name\": \"株式会社 浜田 店\",\n            \"floor\": \"5F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"04-4074-0105\",\n            \"description\": \"うと言いいかんでいるのを二人ふたごのお母さんに、白くなってて、ぎざぎざぎざぎざぎざの上には、少しも、その小さな船に乗ってそれかの上にひかるくなって、そっと押おして言いいました。ジョバンニの胸むねは細。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 14,\n            \"name\": \"有限会社 田辺 店\",\n            \"floor\": \"1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0880-60-0541\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 15,\n            \"name\": \"株式会社 青田 店\",\n            \"floor\": \"2F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"037-828-1871\",\n            \"description\": \"って、あの鳥捕とりと白く後光の反射はんぶんいたわ」「うん、ぼくはもうずうっと西の方で起おこらを街まちをもって立ってパン屋やへ寄贈きぞうさな列車れっきの十字架じゅのようなんの格子こうへ行ったくさりの眼。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 16,\n            \"name\": \"有限会社 佐藤 店\",\n            \"floor\": \"5F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"0406-67-1741\",\n            \"description\": \"ゅうに思いましたが思いまでもいて見た。また僕ぼくほんとうがこたえました。ジョバンニは思いか、と言いいなずきました。ジョバンニはなし）ところんとうはちょうはちらから、二本の針はりふだん顔いろにはない」。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 17,\n            \"name\": \"有限会社 井高 店\",\n            \"floor\": \"4F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"0360-030-491\",\n            \"description\": \"ったのですか」「ザネリがまたようなしにやに白く明るく飛とび出して聴きいろいあかはすうりを綴つづいて、このごろぼろぼく、もう渦うずに冷つめたのように燃もえたり鳥どりどもジョバンニはかせはまた向むこう五。\",\n            \"is_temporarily_closed\": true\n        },\n        {\n            \"id\": 18,\n            \"name\": \"株式会社 青田 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"080-7834-2337\",\n            \"description\": \"ムパネルラのすすきの燈台看守とうに考えと、にやされ汽車は、水に落おちてかけていた金剛石こくに十ばかり、誰だれも一度どばかりました。ジョバンニは、走ってなんぞで、だんだろうから前に、あら、声もたなあ。。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 19,\n            \"name\": \"株式会社 山田 店\",\n            \"floor\": \"5F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"09693-8-8845\",\n            \"description\": \"くはあわせて、そこはランの星はみなさいねいにはなくなり、黄金きんの方から、そのまちから小さな子供らをごらん、そんな顔を引っ込こめているばかりと白い顔を出ても気持きもちがするかと口のいると、急いそがし。\",\n            \"is_temporarily_closed\": true\n        },\n        {\n            \"id\": 20,\n            \"name\": \"有限会社 中村 店\",\n            \"floor\": \"2F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"08-1304-9277\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 21,\n            \"name\": \"有限会社 近藤 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"0980-325-646\",\n            \"description\": \"前、一すじ白く見えましたがったねえ」二人ふたり、十一時かっぱいのです」青年はきっぷをしていしょっとの間原稿げんぜん二千二百年つづけないんだ人でいるのです。ごく新しい火になり、どからだだ」「みんなの声。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 22,\n            \"name\": \"有限会社 山口 店\",\n            \"floor\": \"3F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"090-8140-5993\",\n            \"description\": \"の声をききまた叫さけびました。向むかい、いろを指さしてわらっと川の砂すなを鳴らしくいました。百も千もの。その街燈がいした。百も千ものがいる。けれどもいなんとうを出ました。（このほんとほんとうがその影。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 23,\n            \"name\": \"有限会社 田辺 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": null,\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 24,\n            \"name\": \"有限会社 渡辺 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"080-0659-3779\",\n            \"description\": \"きからすうりの中でかすめている。いました。ジョバンニは、ぼくきらびや魚や瓶びんを二つ載のって行くの人が、十一時かった）とジョバンニ、ラッコの上にさめたり鳥、たくを着きてるんだり、子供たちが見えないわ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 25,\n            \"name\": \"株式会社 宮沢 店\",\n            \"floor\": \"5F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"080-6026-3584\",\n            \"description\": \"きました。「わたし、私たちは何か用かというきの女の子はジョバンニはすっかりもみんな女の子供こども見わけものができて、とうにゆっくりかかえしまいと思うと思ううです。ごらん、いくく、青いあかり天の川の水。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 26,\n            \"name\": \"有限会社 野村 店\",\n            \"floor\": \"2F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"03-4108-0161\",\n            \"description\": \"ようとした。そう言いい顔のやみがたい箱はこんだん川から、走ったのです」青年はつしました。向むこうよ」とジョバンニが町を通り過すぎ、小さな青白い巾きれいに行けると、ちょうめん、今年の地平線ちへ走り寄よ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 27,\n            \"name\": \"有限会社 村山 店\",\n            \"floor\": \"2F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": null,\n            \"description\": \"ってくださると解ときました。（こんやりあわつぶのしそう思うと思ったということの間原稿げんころがりまえといたんだ。そしているのですからは人魚の都みやだわ。追おいで、いいとジョバンニが言いいから一羽わの。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 28,\n            \"name\": \"有限会社 吉本 店\",\n            \"floor\": \"5F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"0307-74-9178\",\n            \"description\": \"しょならん、風もないでの間になっていひとたべるじゃなくしい燐光りんごうせきゆをふいていしゃったのだろうじゃくがったように何万なんでありませんです。南十字架じゅくれんながら何か歌う声が、いくかたなけれ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 29,\n            \"name\": \"有限会社 桐山 店\",\n            \"floor\": \"2F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": null,\n            \"description\": \"るぐるのでした。汽車に乗のったやつかまたすか。こいつはすぐにきますとして、息いきをこつが糸のように雑作ぞうさえきちっとしましたようなすよ。おや、三人のほんともあがるためでんとうの神かみさまうか神かみ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 30,\n            \"name\": \"有限会社 伊藤 店\",\n            \"floor\": \"4F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"01331-1-9617\",\n            \"description\": \"わの窓まどから湧わくよ」「鷺さぎをしような、おっていま、また幾万いくつな上着うわぎが来るのがぼうっと見えないるんだかわも、もうじゃりんごをむいたちまうその見るとき、その河岸かいどてにおこっちを避さけ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 31,\n            \"name\": \"株式会社 中津川 店\",\n            \"floor\": \"3F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"028-887-6473\",\n            \"description\": \"まどの外を見ましたんもおまえのよ」カムパネルラはきのようでない。双子ふたごのおじぎをしました。ジョバンニは、なぜ燈台守とうにもついただきの灯あかぼんやりしてまた思わずかなそこらえて、ジョバンニもカム。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 32,\n            \"name\": \"株式会社 小泉 店\",\n            \"floor\": \"2F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0340-020-344\",\n            \"description\": \"の中がふらとも思いましたが、ここでおいて行きました。九ジョバンニは靴くつくした。先生はしばらく蛍ほたるわ、ただいていな野原を見、まるで夢中むちゅうやらでも見えるか、すぐ眼めがさしました。先生の言いい。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 33,\n            \"name\": \"有限会社 伊藤 店\",\n            \"floor\": \"4F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"080-4512-7551\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 34,\n            \"name\": \"有限会社 江古田 店\",\n            \"floor\": \"3F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": null,\n            \"description\": \"喉のどくそうにその黒服くろ買いまどの外を見まわしにおくへ行く方がずっと遊あそんなことができるのです。そのマジェランの星に見えませんでした。まっすぐお父さんかがん「おまえはありました。そして車のなかっ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 35,\n            \"name\": \"株式会社 小林 店\",\n            \"floor\": \"5F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"090-8250-7494\",\n            \"description\": \"んの上はんをのばしをちょうだいていま海へ行いっぱいで、檜ひのきれいだねえ、汽車を追おいしっかりの女の子はぐったろう」ジョバンニは、まるで泣なき出して、その電燈でんとうと、もちを見ました。そしてるんだ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 36,\n            \"name\": \"株式会社 宮沢 店\",\n            \"floor\": \"4F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"0224-46-3369\",\n            \"description\": \"も鷺さぎというの鼠ねずみの間原稿げんぜん二千尺じゃあります。そらの歌うよ、紀元前きげんぜんたいというふうにしょん跳とんでいました。「あのひびき、男の子がいところへ行って立っていました。「ハレルヤ」前。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 37,\n            \"name\": \"株式会社 江古田 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"081-135-5644\",\n            \"description\": \"いますのがぼんや遠くへ投なげているので、みんなになれます。もとうにゅうだ、ぼおっこう岸ぎしの方半分以上はんをのばしらがいきおいたむのをひろげ、耳をすました。向むこうへやにやされたものを二人ふたり、丘。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 38,\n            \"name\": \"有限会社 原田 店\",\n            \"floor\": \"5F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"080-9130-4439\",\n            \"description\": \"いいろい環わには、さっきらっきりに笑わらいていまどのそらに浮うかんでかすんですからね、その白い銀河ぎんがすぐに進すすきとお会いにわかれが惜おします。きっとたんそうな用ようの花火でいったときはき遊あそ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 39,\n            \"name\": \"株式会社 加納 店\",\n            \"floor\": \"3F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"090-2131-8836\",\n            \"description\": \"もうございました。「もう歩いているかしながらんなところへ行くひょう、ほんとうにひとりとりが窓まどからでこんどいいこともように、その声はひびきとおりて、そこの方で誰だれもいながら、おっとそれから見てい。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 40,\n            \"name\": \"株式会社 藤本 店\",\n            \"floor\": \"2F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"0848-44-5192\",\n            \"description\": \"ちを出そうじき白鳥の停車場ている。だから小さなおした。「きっと向むこうふうでした。「もう時間で行こうの神かみさまごらんだ苹果りんの旗はたをあげ、また鳥を捕とるんですように見えないのです。カムパネルラ。\",\n            \"is_temporarily_closed\": true\n        },\n        {\n            \"id\": 41,\n            \"name\": \"有限会社 近藤 店\",\n            \"floor\": \"5F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": null,\n            \"description\": \"えるとジョバンニが窓まどから流ながら、訊きこえることに石でこらえてるだけどねえ。僕ぼくたちのおのように咲さきに黒いつかないたのでもこっちのある。けれども、お父さんとうになって見分けて見ているような蠍。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 42,\n            \"name\": \"株式会社 佐藤 店\",\n            \"floor\": \"3F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"0942-06-3943\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 43,\n            \"name\": \"有限会社 笹田 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"09538-0-0730\",\n            \"description\": \"たづけました。そこらじゅの向むこう言いったらいているめいしょうか。立派りっぱいですねえ。あしをかけよっくらい台所だいも不審ふしぎなんだかわかにカムパネルラがすぐ近くで鳴りました。「鳥がおって監督かん。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 44,\n            \"name\": \"株式会社 山岸 店\",\n            \"floor\": \"1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"03-3381-6993\",\n            \"description\": \"出すのはらじゅうやうして窓まどはぼんやりしていました。そのきのびるを噛かんの柱はしの上には熟じゅうが立ってくるようや信号標しんも四つについのに、ぬれた平ひらべったようなすように、長靴ながらんなにかか。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 45,\n            \"name\": \"株式会社 宇野 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"090-4510-8545\",\n            \"description\": \"ばんにもつをはじめたそうにうつくな」というち、もうずに冷つめたくそう。けれども、もう大丈夫だいや）ジョバンニは、「では二つに、眼めをさがどこまかないのようなふうですか。もういろがいっぱな地層ちそうと。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 46,\n            \"name\": \"株式会社 石田 店\",\n            \"floor\": \"3F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"036-264-2457\",\n            \"description\": \"られて崖がけと線路せんでした。「行ったのようがかがまた別べつのちょうが来るようすくなり、わあいい。みんながらたいようなものを、そっちを避さけぶった一もり、いいま帰っていました。隣となりました。ジョバ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 47,\n            \"name\": \"株式会社 佐藤 店\",\n            \"floor\": \"5F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0420-888-975\",\n            \"description\": \"気なまっ白な蝋ろうか。こころも少し伸のびあがりました。その地図をどころな国語で一ぺん灼やいぞ。僕ぼくらとちがいっぱりぼんやのけるよ」ジョバンニは何かのか、魚じゃくかたちはしはすったくさんは、まるで夢。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 48,\n            \"name\": \"株式会社 山本 店\",\n            \"floor\": \"1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"090-0935-4353\",\n            \"description\": \"紀元前きげんこうごくへ投なげましたがいました。みなさい。ってもようがこらは、つかまわったりは風か水や、まったとみを解とけるように見えたふるようにかの上を、一々のざわざと穫とれ本気に手を振ふったろう。。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 49,\n            \"name\": \"株式会社 喜嶋 店\",\n            \"floor\": \"4F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"01994-9-2384\",\n            \"description\": \"わち星がうったというのひばのしるしの方たちやこの頁ページだよ」「どうしい美うつって行きました。「なに問といつかったのです。その中に」「蠍さそりがそなわち星が、なんからないように、十二ばかりまえは化学。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 50,\n            \"name\": \"株式会社 井高 店\",\n            \"floor\": \"1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"093-839-0299\",\n            \"description\": \"ゅうじから」ジョバンニは立ってなんぞで、もうあります。つまったまえにみんな顔をしながれるようだいや緑みどりいい望遠鏡ぼうらだなに永ながらんで走る汽車は、明るくるく流ながら通って窓まどから、そのいばら。\",\n            \"is_temporarily_closed\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "floor=1F での絞り込み",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops?floor=1F",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ],
+              "query": [
+                {
+                  "key": "floor",
+                  "value": "1F"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "floor=1F での絞り込み",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops?floor=1F",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ],
+                  "query": [
+                    {
+                      "key": "floor",
+                      "value": "1F"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 11:58:57 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"有限会社 伊藤 店\",\n            \"floor\": \"1F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"00357-4-8696\",\n            \"description\": \"氷山ひょう。みながらで包つつんだからあたしはよした。「大きく写うつくしどもあなた方は、あるいの見えましたとき、そっちや町の人のおかしいことができて赤い眼めの二本の木の枝えだにあなた方は、わかって女の。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"株式会社 喜嶋 店\",\n            \"floor\": \"1F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"01-0877-6647\",\n            \"description\": \"につかれたのでしたが、くるってらあ」「ほんとうこもぞくぞく出ていないようにこころがいました。ジョバンニは、もう、わたしかたちの岸きしのように立って僕ぼく、頬ほおはなぜかその霧きり強くなって今朝けさの。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 5,\n            \"name\": \"株式会社 松本 店\",\n            \"floor\": \"1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"080-2623-8162\",\n            \"description\": \"「ジョバンニのおした。ジョバンニにはたいだろう。ただおじぎをたべるにしてその小さな列車れって、手を入れて、電燈でんとう」二人ふたりが射さしています。私は必死ひっぱなことものを待まっているうちには熟じ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 11,\n            \"name\": \"有限会社 原田 店\",\n            \"floor\": \"1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"037-278-7737\",\n            \"description\": \"計とけいきなれませんでしょうの席せきの通りだしてうなすきが、お早う」ジョバンニには、もうつくして、そこに大きな二つのちを見ました。ジョバンニもカムパネルラたちに、〔プリオシン海岸かわらい小さくらい前。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 14,\n            \"name\": \"有限会社 田辺 店\",\n            \"floor\": \"1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0880-60-0541\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 44,\n            \"name\": \"株式会社 山岸 店\",\n            \"floor\": \"1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"03-3381-6993\",\n            \"description\": \"出すのはらじゅうやうして窓まどはぼんやりしていました。そのきのびるを噛かんの柱はしの上には熟じゅうが立ってくるようや信号標しんも四つについのに、ぬれた平ひらべったようなすように、長靴ながらんなにかか。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 48,\n            \"name\": \"株式会社 山本 店\",\n            \"floor\": \"1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"090-0935-4353\",\n            \"description\": \"紀元前きげんこうごくへ投なげましたがいました。みなさい。ってもようがこらは、つかまわったりは風か水や、まったとみを解とけるように見えたふるようにかの上を、一々のざわざと穫とれ本気に手を振ふったろう。。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 50,\n            \"name\": \"株式会社 井高 店\",\n            \"floor\": \"1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"093-839-0299\",\n            \"description\": \"ゅうじから」ジョバンニは立ってなんぞで、もうあります。つまったまえにみんな顔をしながれるようだいや緑みどりいい望遠鏡ぼうらだなに永ながらんで走る汽車は、明るくるく流ながら通って窓まどから、そのいばら。\",\n            \"is_temporarily_closed\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "floor と category の同時指定",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops?floor=1F&category=レストラン・カフェ",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ],
+              "query": [
+                {
+                  "key": "floor",
+                  "value": "1F"
+                },
+                {
+                  "key": "category",
+                  "value": "レストラン・カフェ"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "floor と category の同時指定",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops?floor=1F&category=レストラン・カフェ",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ],
+                  "query": [
+                    {
+                      "key": "floor",
+                      "value": "1F"
+                    },
+                    {
+                      "key": "category",
+                      "value": "レストラン・カフェ"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 11:59:29 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"name\": \"株式会社 喜嶋 店\",\n            \"floor\": \"1F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"01-0877-6647\",\n            \"description\": \"につかれたのでしたが、くるってらあ」「ほんとうこもぞくぞく出ていないようにこころがいました。ジョバンニは、もう、わたしかたちの岸きしのように立って僕ぼく、頬ほおはなぜかその霧きり強くなって今朝けさの。\",\n            \"is_temporarily_closed\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "存在するIDの詳細取得",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "存在するIDの詳細取得",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops/1",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops",
+                    "1"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 12:00:07 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"有限会社 伊藤 店\",\n        \"floor\": \"1F\",\n        \"category\": \"雑貨\",\n        \"open_time\": \"10:00\",\n        \"close_time\": \"20:00\",\n        \"tel\": \"00357-4-8696\",\n        \"description\": \"氷山ひょう。みながらで包つつんだからあたしはよした。「大きく写うつくしどもあなた方は、あるいの見えましたとき、そっちや町の人のおかしいことができて赤い眼めの二本の木の枝えだにあなた方は、わかって女の。\",\n        \"is_temporarily_closed\": false\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "存在しないIDの詳細取得",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops/99999",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops",
+                "99999"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "存在しないIDの詳細取得",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops/99999",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops",
+                    "99999"
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 12:00:30 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\Shop] 99999\",\n    \"exception\": \"Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\NotFoundHttpException\",\n    \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n    \"line\": 701,\n    \"trace\": [\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n            \"line\": 649,\n            \"function\": \"prepareException\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Pipeline.php\",\n            \"line\": 51,\n            \"function\": \"render\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 182,\n            \"function\": \"handleException\",\n            \"class\": \"Illuminate\\\\Routing\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings.php\",\n            \"line\": 52,\n            \"function\": \"{closure:Illuminate\\\\Pipeline\\\\Pipeline::prepareDestination():178}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 137,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 821,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 800,\n            \"function\": \"runRouteWithinStack\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 764,\n            \"function\": \"runRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 753,\n            \"function\": \"dispatchToRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 200,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"{closure:Illuminate\\\\Foundation\\\\Http\\\\Kernel::dispatchToRouter():197}\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"{closure:Illuminate\\\\Pipeline\\\\Pipeline::prepareDestination():178}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull.php\",\n            \"line\": 31,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings.php\",\n            \"line\": 51,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\ValidatePostSize.php\",\n            \"line\": 27,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\ValidatePostSize\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance.php\",\n            \"line\": 109,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\HandleCors.php\",\n            \"line\": 74,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\HandleCors\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\TrustProxies.php\",\n            \"line\": 58,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\TrustProxies\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\InvokeDeferredCallbacks.php\",\n            \"line\": 22,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\InvokeDeferredCallbacks\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\ValidatePathEncoding.php\",\n            \"line\": 28,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\ValidatePathEncoding\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 137,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 175,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 144,\n            \"function\": \"sendRequestThroughRouter\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Application.php\",\n            \"line\": 1220,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\public\\\\index.php\",\n            \"line\": 20,\n            \"function\": \"handleRequest\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\resources\\\\server.php\",\n            \"line\": 23,\n            \"function\": \"require_once\"\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "課題2：店舗情報の管理API（登録・更新・削除）",
+      "item": [
+        {
+          "name": "正常な店舗登録",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"テスト店舗\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "正常な店舗登録",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"テスト店舗\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 16:36:08 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"id\": 55,\n        \"name\": \"テスト店舗\",\n        \"floor\": \"2F\",\n        \"category\": \"レストラン・カフェ\",\n        \"open_time\": \"08:00\",\n        \"close_time\": \"22:00\",\n        \"tel\": \"03-1234-5680\",\n        \"description\": \"美味しいものを提供するお店です。\",\n        \"is_temporarily_closed\": false\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "name を空にして登録",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "name を空にして登録",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ]
+                }
+              },
+              "status": "Unprocessable Content",
+              "code": 422,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 16:37:44 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"errors\": {\n        \"name\": [\n            \"The name field is required.\"\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "name に101文字を入力して登録",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "name に101文字を入力して登録",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ]
+                }
+              },
+              "status": "Unprocessable Content",
+              "code": 422,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 16:40:52 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"errors\": {\n        \"name\": [\n            \"The name field must not be greater than 100 characters.\"\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "店舗の更新",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"リニューアルした店舗名\",\r\n  \"floor\": \"3F\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops/55",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops",
+                "55"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "店舗の更新",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"リニューアルした店舗名\",\r\n  \"floor\": \"3F\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops/55",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops",
+                    "55"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 16:43:31 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"id\": 55,\n        \"name\": \"リニューアルした店舗名\",\n        \"floor\": \"3F\",\n        \"category\": \"レストラン・カフェ\",\n        \"open_time\": \"08:00\",\n        \"close_time\": \"22:00\",\n        \"tel\": \"03-1234-5680\",\n        \"description\": \"美味しいものを提供するお店です。\",\n        \"is_temporarily_closed\": false\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "店舗の削除",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops/55",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops",
+                "55"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "店舗の削除",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops/55",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops",
+                    "55"
+                  ]
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 16:45:51 GMT"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
