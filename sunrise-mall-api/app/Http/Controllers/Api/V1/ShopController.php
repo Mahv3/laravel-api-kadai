@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Models\Shop;
 use App\Http\Resources\ShopResource;
+use App\Http\Requests\StoreShopRequest;
+use App\Http\Requests\UpdateShopRequest;
 use Illuminate\Http\Request;
 
 class ShopController extends Controller
@@ -41,9 +43,15 @@ class ShopController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreShopRequest $request)
     {
-        //
+        $validated = $request->validated();
+
+        $shop = Shop::create($validated);
+
+        return (new ShopResource($shop))
+            ->response()
+            ->setStatusCode(201);
     }
 
     /**
@@ -59,16 +67,26 @@ class ShopController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UpdateShopRequest $request, int $id)
     {
-        //
+        $shop = Shop::findOrFail($id);
+
+        $validated = $request->validated();
+
+        $shop->update($validated);
+
+        return new ShopResource($shop);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(int $id)
     {
-        //
+        $shop = Shop::findOrFail($id);
+
+        $shop->delete();
+
+        return response()->noContent();
     }
 }

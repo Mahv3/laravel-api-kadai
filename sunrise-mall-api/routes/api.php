@@ -5,5 +5,5 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\V1\ShopController;
 
 Route::prefix('v1')->group(function () {
-    Route::apiResource('shops', ShopController::class)->only(['index', 'show']);
+    Route::apiResource('shops', ShopController::class);
 });

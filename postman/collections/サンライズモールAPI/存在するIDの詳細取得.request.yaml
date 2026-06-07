@@ -1,5 +1,0 @@
-$kind: http-request
-name: 存在するIDの詳細取得
-url: http://127.0.0.1:8000/api/v1/shops/1
-method: GET
-order: 4232535327841216

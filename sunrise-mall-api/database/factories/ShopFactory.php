@@ -25,8 +25,8 @@ class ShopFactory extends Factory
             'floor' => fake()->randomElement(['1F', '2F', '3F', '4F', '5F', 'B1F']),
             'category' => fake()->randomElement(['レストラン・カフェ', 'ファッション', '雑貨', 'サービス', 'アミューズメント']),
             // open_time / close_time: '09:00:00' のような形式
-            'open_time' => sprintf('%02d:00:00', $openHour),
-            'close_time' => sprintf('%02d:00:00', $closeHour),
+            'open_time' => sprintf('%02d:00', $openHour),
+            'close_time' => sprintf('%02d:00', $closeHour),
             // tel: ランダムな電話番号（NULLの可能性も20%持たせる）
             'tel' => fake()->optional(0.8)->phoneNumber(),
             // description: ランダムな文章（NULLの可能性も20%持たせる）

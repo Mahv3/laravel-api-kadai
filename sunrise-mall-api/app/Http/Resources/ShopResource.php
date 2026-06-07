@@ -4,6 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Carbon;
 
 class ShopResource extends JsonResource
 {
@@ -19,8 +20,8 @@ class ShopResource extends JsonResource
             'name' => $this->name,
             'floor' => $this->floor,
             'category' => $this->category,
-            'open_time' => substr($this->open_time, 0, 5),  // "10:00:00" -> "10:00"
-            'close_time' => substr($this->close_time, 0, 5), // "21:00:00" -> "21:00"
+            'open_time' => Carbon::parse($this->open_time)->format('H:i'),
+            'close_time' => Carbon::parse($this->close_time)->format('H:i'),
             'tel' => $this->tel,
             'description' => $this->description,
             'is_temporarily_closed' => (bool)$this->is_temporarily_closed, 

@@ -1,7 +1,0 @@
-$kind: http-request
-name: floor=1F での絞り込み
-url: http://127.0.0.1:8000/api/v1/shops?floor=1F
-method: GET
-queryParams:
-  floor: 1F
-order: 3235423602440060

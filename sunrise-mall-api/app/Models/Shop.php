@@ -9,4 +9,15 @@ class Shop extends Model
 {
     /** @use HasFactory<\Database\Factories\ShopFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'floor',
+        'category',
+        'open_time',
+        'close_time',
+        'tel',
+        'description',
+        'is_temporarily_closed',
+    ];
 }
