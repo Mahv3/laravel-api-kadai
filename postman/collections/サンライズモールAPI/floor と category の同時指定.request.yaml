@@ -1,0 +1,8 @@
+$kind: http-request
+name: floor と category の同時指定
+url: http://127.0.0.1:8000/api/v1/shops?floor=1F&category=レストラン・カフェ
+method: GET
+queryParams:
+  floor: 1F
+  category: レストラン・カフェ
+order: 3342583113132804
