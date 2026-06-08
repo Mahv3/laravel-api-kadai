@@ -1,0 +1,1246 @@
+{
+  "info": {
+    "_postman_id": "7136f148-3f5e-4a12-9cb9-e029e247dfc7",
+    "name": "サンライズモールAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55519142",
+    "_collection_link": "https://go.postman.co/collection/55519142-7136f148-3f5e-4a12-9cb9-e029e247dfc7?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "課題1：店舗情報の参照API（JSON）",
+      "item": [
+        {
+          "name": "一覧取得（パラメータなし）",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "一覧取得（パラメータなし）",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 11:58:06 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"有限会社 伊藤 店\",\n            \"floor\": \"1F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"00357-4-8696\",\n            \"description\": \"氷山ひょう。みながらで包つつんだからあたしはよした。「大きく写うつくしどもあなた方は、あるいの見えましたとき、そっちや町の人のおかしいことができて赤い眼めの二本の木の枝えだにあなた方は、わかって女の。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"株式会社 喜嶋 店\",\n            \"floor\": \"1F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"01-0877-6647\",\n            \"description\": \"につかれたのでしたが、くるってらあ」「ほんとうこもぞくぞく出ていないようにこころがいました。ジョバンニは、もう、わたしかたちの岸きしのように立って僕ぼく、頬ほおはなぜかその霧きり強くなって今朝けさの。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 3,\n            \"name\": \"株式会社 斉藤 店\",\n            \"floor\": \"4F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"067-538-2274\",\n            \"description\": \"はいいました。ければいあかりとりとりとりと同じようなふうに窓まどからいまのとないのだ。中で決心けっしょうの三角標さんは」すぐ眼めはまるで細こまで、もう帰って、星のようすいしっぽがまた別べつのちょうが。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 4,\n            \"name\": \"有限会社 藤本 店\",\n            \"floor\": \"4F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"0298-65-6734\",\n            \"description\": \"のですか。わたれわたした。ジョバンニさんの柱はしのずうっとさせると耳に手を振ふりかが一つジョバンニはどこからずの鳥捕とりの大きなどは思わずそうか神かみさまに召めされて来くるのでしょうとしまいます。も。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 5,\n            \"name\": \"株式会社 松本 店\",\n            \"floor\": \"1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"080-2623-8162\",\n            \"description\": \"「ジョバンニのおした。ジョバンニにはたいだろう。ただおじぎをたべるにしてその小さな列車れって、手を入れて、電燈でんとう」二人ふたりが射さしています。私は必死ひっぱなことものを待まっているうちには熟じ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 6,\n            \"name\": \"株式会社 石田 店\",\n            \"floor\": \"2F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"04-4248-0120\",\n            \"description\": \"でも燃もやっぱりさっきのどくださいていました空のするとこには、その正面しょにまたことがったせいのは小さいわいのすぐみんなさん集あつまりを出す小さな望遠鏡ぼうに、月長石げった球たまらないしっかさんそく。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 7,\n            \"name\": \"株式会社 佐藤 店\",\n            \"floor\": \"3F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"080-9686-3863\",\n            \"description\": \"面しょうがついて、ぼくずいても気持きもちを出してもむだと言いおうとした。「さあ。聞かなけれどもぼく、それをかぶったの神かみさまでカムパネルラが女の子を見ているのでした。「ありが言いいましくなりました。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 8,\n            \"name\": \"有限会社 野村 店\",\n            \"floor\": \"5F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"08978-5-9213\",\n            \"description\": \"すにでもです、今日、牛乳ぎゅうの野原のはずもなく溶鉱炉ようなんべんきの十字架じゅうになってどしどうしてね、わずそうだん向むこうを通りに青や橙だいもいろいの活字かつかしだねえさんはまるで雪ゆきの、ほん。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 9,\n            \"name\": \"有限会社 大垣 店\",\n            \"floor\": \"3F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0570-165-132\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 10,\n            \"name\": \"株式会社 藤本 店\",\n            \"floor\": \"4F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0016-98-8529\",\n            \"description\": \"に会あいとうの席せきに降おりて来ました。ジョバンニもカムパネルラは、ほんとうも今晩こんな顔いろな国語で一ぺんに、ちらちらちらちらちらっしゃじょです。する。僕ぼくもう半分はんぶんも行ったくをはじめて、。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 11,\n            \"name\": \"有限会社 原田 店\",\n            \"floor\": \"1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"037-278-7737\",\n            \"description\": \"計とけいきなれませんでしょうの席せきの通りだしてうなすきが、お早う」ジョバンニには、もうつくして、そこに大きな二つのちを見ました。ジョバンニもカムパネルラたちに、〔プリオシン海岸かわらい小さくらい前。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 12,\n            \"name\": \"株式会社 宮沢 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0646-96-4779\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 13,\n            \"name\": \"株式会社 浜田 店\",\n            \"floor\": \"5F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"04-4074-0105\",\n            \"description\": \"うと言いいかんでいるのを二人ふたごのお母さんに、白くなってて、ぎざぎざぎざぎざぎざの上には、少しも、その小さな船に乗ってそれかの上にひかるくなって、そっと押おして言いいました。ジョバンニの胸むねは細。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 14,\n            \"name\": \"有限会社 田辺 店\",\n            \"floor\": \"1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0880-60-0541\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 15,\n            \"name\": \"株式会社 青田 店\",\n            \"floor\": \"2F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"037-828-1871\",\n            \"description\": \"って、あの鳥捕とりと白く後光の反射はんぶんいたわ」「うん、ぼくはもうずうっと西の方で起おこらを街まちをもって立ってパン屋やへ寄贈きぞうさな列車れっきの十字架じゅのようなんの格子こうへ行ったくさりの眼。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 16,\n            \"name\": \"有限会社 佐藤 店\",\n            \"floor\": \"5F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"0406-67-1741\",\n            \"description\": \"ゅうに思いましたが思いまでもいて見た。また僕ぼくほんとうがこたえました。ジョバンニは思いか、と言いいなずきました。ジョバンニはなし）ところんとうはちょうはちらから、二本の針はりふだん顔いろにはない」。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 17,\n            \"name\": \"有限会社 井高 店\",\n            \"floor\": \"4F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"0360-030-491\",\n            \"description\": \"ったのですか」「ザネリがまたようなしにやに白く明るく飛とび出して聴きいろいあかはすうりを綴つづいて、このごろぼろぼく、もう渦うずに冷つめたのように燃もえたり鳥どりどもジョバンニはかせはまた向むこう五。\",\n            \"is_temporarily_closed\": true\n        },\n        {\n            \"id\": 18,\n            \"name\": \"株式会社 青田 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"080-7834-2337\",\n            \"description\": \"ムパネルラのすすきの燈台看守とうに考えと、にやされ汽車は、水に落おちてかけていた金剛石こくに十ばかり、誰だれも一度どばかりました。ジョバンニは、走ってなんぞで、だんだろうから前に、あら、声もたなあ。。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 19,\n            \"name\": \"株式会社 山田 店\",\n            \"floor\": \"5F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"09693-8-8845\",\n            \"description\": \"くはあわせて、そこはランの星はみなさいねいにはなくなり、黄金きんの方から、そのまちから小さな子供らをごらん、そんな顔を引っ込こめているばかりと白い顔を出ても気持きもちがするかと口のいると、急いそがし。\",\n            \"is_temporarily_closed\": true\n        },\n        {\n            \"id\": 20,\n            \"name\": \"有限会社 中村 店\",\n            \"floor\": \"2F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"08-1304-9277\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 21,\n            \"name\": \"有限会社 近藤 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"0980-325-646\",\n            \"description\": \"前、一すじ白く見えましたがったねえ」二人ふたり、十一時かっぱいのです」青年はきっぷをしていしょっとの間原稿げんぜん二千二百年つづけないんだ人でいるのです。ごく新しい火になり、どからだだ」「みんなの声。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 22,\n            \"name\": \"有限会社 山口 店\",\n            \"floor\": \"3F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"090-8140-5993\",\n            \"description\": \"の声をききまた叫さけびました。向むかい、いろを指さしてわらっと川の砂すなを鳴らしくいました。百も千もの。その街燈がいした。百も千ものがいる。けれどもいなんとうを出ました。（このほんとほんとうがその影。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 23,\n            \"name\": \"有限会社 田辺 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": null,\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 24,\n            \"name\": \"有限会社 渡辺 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"080-0659-3779\",\n            \"description\": \"きからすうりの中でかすめている。いました。ジョバンニは、ぼくきらびや魚や瓶びんを二つ載のって行くの人が、十一時かった）とジョバンニ、ラッコの上にさめたり鳥、たくを着きてるんだり、子供たちが見えないわ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 25,\n            \"name\": \"株式会社 宮沢 店\",\n            \"floor\": \"5F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"080-6026-3584\",\n            \"description\": \"きました。「わたし、私たちは何か用かというきの女の子はジョバンニはすっかりもみんな女の子供こども見わけものができて、とうにゆっくりかかえしまいと思うと思ううです。ごらん、いくく、青いあかり天の川の水。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 26,\n            \"name\": \"有限会社 野村 店\",\n            \"floor\": \"2F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"03-4108-0161\",\n            \"description\": \"ようとした。そう言いい顔のやみがたい箱はこんだん川から、走ったのです」青年はつしました。向むこうよ」とジョバンニが町を通り過すぎ、小さな青白い巾きれいに行けると、ちょうめん、今年の地平線ちへ走り寄よ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 27,\n            \"name\": \"有限会社 村山 店\",\n            \"floor\": \"2F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": null,\n            \"description\": \"ってくださると解ときました。（こんやりあわつぶのしそう思うと思ったということの間原稿げんころがりまえといたんだ。そしているのですからは人魚の都みやだわ。追おいで、いいとジョバンニが言いいから一羽わの。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 28,\n            \"name\": \"有限会社 吉本 店\",\n            \"floor\": \"5F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"0307-74-9178\",\n            \"description\": \"しょならん、風もないでの間になっていひとたべるじゃなくしい燐光りんごうせきゆをふいていしゃったのだろうじゃくがったように何万なんでありませんです。南十字架じゅくれんながら何か歌う声が、いくかたなけれ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 29,\n            \"name\": \"有限会社 桐山 店\",\n            \"floor\": \"2F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": null,\n            \"description\": \"るぐるのでした。汽車に乗のったやつかまたすか。こいつはすぐにきますとして、息いきをこつが糸のように雑作ぞうさえきちっとしましたようなすよ。おや、三人のほんともあがるためでんとうの神かみさまうか神かみ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 30,\n            \"name\": \"有限会社 伊藤 店\",\n            \"floor\": \"4F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"01331-1-9617\",\n            \"description\": \"わの窓まどから湧わくよ」「鷺さぎをしような、おっていま、また幾万いくつな上着うわぎが来るのがぼうっと見えないるんだかわも、もうじゃりんごをむいたちまうその見るとき、その河岸かいどてにおこっちを避さけ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 31,\n            \"name\": \"株式会社 中津川 店\",\n            \"floor\": \"3F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"028-887-6473\",\n            \"description\": \"まどの外を見ましたんもおまえのよ」カムパネルラはきのようでない。双子ふたごのおじぎをしました。ジョバンニは、なぜ燈台守とうにもついただきの灯あかぼんやりしてまた思わずかなそこらえて、ジョバンニもカム。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 32,\n            \"name\": \"株式会社 小泉 店\",\n            \"floor\": \"2F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0340-020-344\",\n            \"description\": \"の中がふらとも思いましたが、ここでおいて行きました。九ジョバンニは靴くつくした。先生はしばらく蛍ほたるわ、ただいていな野原を見、まるで夢中むちゅうやらでも見えるか、すぐ眼めがさしました。先生の言いい。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 33,\n            \"name\": \"有限会社 伊藤 店\",\n            \"floor\": \"4F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"080-4512-7551\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 34,\n            \"name\": \"有限会社 江古田 店\",\n            \"floor\": \"3F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": null,\n            \"description\": \"喉のどくそうにその黒服くろ買いまどの外を見まわしにおくへ行く方がずっと遊あそんなことができるのです。そのマジェランの星に見えませんでした。まっすぐお父さんかがん「おまえはありました。そして車のなかっ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 35,\n            \"name\": \"株式会社 小林 店\",\n            \"floor\": \"5F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"090-8250-7494\",\n            \"description\": \"んの上はんをのばしをちょうだいていま海へ行いっぱいで、檜ひのきれいだねえ、汽車を追おいしっかりの女の子はぐったろう」ジョバンニは、まるで泣なき出して、その電燈でんとうと、もちを見ました。そしてるんだ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 36,\n            \"name\": \"株式会社 宮沢 店\",\n            \"floor\": \"4F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"0224-46-3369\",\n            \"description\": \"も鷺さぎというの鼠ねずみの間原稿げんぜん二千尺じゃあります。そらの歌うよ、紀元前きげんぜんたいというふうにしょん跳とんでいました。「あのひびき、男の子がいところへ行って立っていました。「ハレルヤ」前。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 37,\n            \"name\": \"株式会社 江古田 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"081-135-5644\",\n            \"description\": \"いますのがぼんや遠くへ投なげているので、みんなになれます。もとうにゅうだ、ぼおっこう岸ぎしの方半分以上はんをのばしらがいきおいたむのをひろげ、耳をすました。向むこうへやにやされたものを二人ふたり、丘。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 38,\n            \"name\": \"有限会社 原田 店\",\n            \"floor\": \"5F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"080-9130-4439\",\n            \"description\": \"いいろい環わには、さっきらっきりに笑わらいていまどのそらに浮うかんでかすんですからね、その白い銀河ぎんがすぐに進すすきとお会いにわかれが惜おします。きっとたんそうな用ようの花火でいったときはき遊あそ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 39,\n            \"name\": \"株式会社 加納 店\",\n            \"floor\": \"3F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"090-2131-8836\",\n            \"description\": \"もうございました。「もう歩いているかしながらんなところへ行くひょう、ほんとうにひとりとりが窓まどからでこんどいいこともように、その声はひびきとおりて、そこの方で誰だれもいながら、おっとそれから見てい。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 40,\n            \"name\": \"株式会社 藤本 店\",\n            \"floor\": \"2F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"0848-44-5192\",\n            \"description\": \"ちを出そうじき白鳥の停車場ている。だから小さなおした。「きっと向むこうふうでした。「もう時間で行こうの神かみさまごらんだ苹果りんの旗はたをあげ、また鳥を捕とるんですように見えないのです。カムパネルラ。\",\n            \"is_temporarily_closed\": true\n        },\n        {\n            \"id\": 41,\n            \"name\": \"有限会社 近藤 店\",\n            \"floor\": \"5F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": null,\n            \"description\": \"えるとジョバンニが窓まどから流ながら、訊きこえることに石でこらえてるだけどねえ。僕ぼくたちのおのように咲さきに黒いつかないたのでもこっちのある。けれども、お父さんとうになって見分けて見ているような蠍。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 42,\n            \"name\": \"株式会社 佐藤 店\",\n            \"floor\": \"3F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"0942-06-3943\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 43,\n            \"name\": \"有限会社 笹田 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"09538-0-0730\",\n            \"description\": \"たづけました。そこらじゅの向むこう言いったらいているめいしょうか。立派りっぱいですねえ。あしをかけよっくらい台所だいも不審ふしぎなんだかわかにカムパネルラがすぐ近くで鳴りました。「鳥がおって監督かん。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 44,\n            \"name\": \"株式会社 山岸 店\",\n            \"floor\": \"1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"03-3381-6993\",\n            \"description\": \"出すのはらじゅうやうして窓まどはぼんやりしていました。そのきのびるを噛かんの柱はしの上には熟じゅうが立ってくるようや信号標しんも四つについのに、ぬれた平ひらべったようなすように、長靴ながらんなにかか。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 45,\n            \"name\": \"株式会社 宇野 店\",\n            \"floor\": \"B1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"090-4510-8545\",\n            \"description\": \"ばんにもつをはじめたそうにうつくな」というち、もうずに冷つめたくそう。けれども、もう大丈夫だいや）ジョバンニは、「では二つに、眼めをさがどこまかないのようなふうですか。もういろがいっぱな地層ちそうと。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 46,\n            \"name\": \"株式会社 石田 店\",\n            \"floor\": \"3F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"036-264-2457\",\n            \"description\": \"られて崖がけと線路せんでした。「行ったのようがかがまた別べつのちょうが来るようすくなり、わあいい。みんながらたいようなものを、そっちを避さけぶった一もり、いいま帰っていました。隣となりました。ジョバ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 47,\n            \"name\": \"株式会社 佐藤 店\",\n            \"floor\": \"5F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0420-888-975\",\n            \"description\": \"気なまっ白な蝋ろうか。こころも少し伸のびあがりました。その地図をどころな国語で一ぺん灼やいぞ。僕ぼくらとちがいっぱりぼんやのけるよ」ジョバンニは何かのか、魚じゃくかたちはしはすったくさんは、まるで夢。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 48,\n            \"name\": \"株式会社 山本 店\",\n            \"floor\": \"1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"090-0935-4353\",\n            \"description\": \"紀元前きげんこうごくへ投なげましたがいました。みなさい。ってもようがこらは、つかまわったりは風か水や、まったとみを解とけるように見えたふるようにかの上を、一々のざわざと穫とれ本気に手を振ふったろう。。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 49,\n            \"name\": \"株式会社 喜嶋 店\",\n            \"floor\": \"4F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"01994-9-2384\",\n            \"description\": \"わち星がうったというのひばのしるしの方たちやこの頁ページだよ」「どうしい美うつって行きました。「なに問といつかったのです。その中に」「蠍さそりがそなわち星が、なんからないように、十二ばかりまえは化学。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 50,\n            \"name\": \"株式会社 井高 店\",\n            \"floor\": \"1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"093-839-0299\",\n            \"description\": \"ゅうじから」ジョバンニは立ってなんぞで、もうあります。つまったまえにみんな顔をしながれるようだいや緑みどりいい望遠鏡ぼうらだなに永ながらんで走る汽車は、明るくるく流ながら通って窓まどから、そのいばら。\",\n            \"is_temporarily_closed\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "floor=1F での絞り込み",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops?floor=1F",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ],
+              "query": [
+                {
+                  "key": "floor",
+                  "value": "1F"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "floor=1F での絞り込み",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops?floor=1F",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ],
+                  "query": [
+                    {
+                      "key": "floor",
+                      "value": "1F"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 11:58:57 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"有限会社 伊藤 店\",\n            \"floor\": \"1F\",\n            \"category\": \"雑貨\",\n            \"open_time\": \"10:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"00357-4-8696\",\n            \"description\": \"氷山ひょう。みながらで包つつんだからあたしはよした。「大きく写うつくしどもあなた方は、あるいの見えましたとき、そっちや町の人のおかしいことができて赤い眼めの二本の木の枝えだにあなた方は、わかって女の。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"株式会社 喜嶋 店\",\n            \"floor\": \"1F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"01-0877-6647\",\n            \"description\": \"につかれたのでしたが、くるってらあ」「ほんとうこもぞくぞく出ていないようにこころがいました。ジョバンニは、もう、わたしかたちの岸きしのように立って僕ぼく、頬ほおはなぜかその霧きり強くなって今朝けさの。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 5,\n            \"name\": \"株式会社 松本 店\",\n            \"floor\": \"1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"080-2623-8162\",\n            \"description\": \"「ジョバンニのおした。ジョバンニにはたいだろう。ただおじぎをたべるにしてその小さな列車れって、手を入れて、電燈でんとう」二人ふたりが射さしています。私は必死ひっぱなことものを待まっているうちには熟じ。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 11,\n            \"name\": \"有限会社 原田 店\",\n            \"floor\": \"1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"037-278-7737\",\n            \"description\": \"計とけいきなれませんでしょうの席せきの通りだしてうなすきが、お早う」ジョバンニには、もうつくして、そこに大きな二つのちを見ました。ジョバンニもカムパネルラたちに、〔プリオシン海岸かわらい小さくらい前。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 14,\n            \"name\": \"有限会社 田辺 店\",\n            \"floor\": \"1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"09:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"0880-60-0541\",\n            \"description\": null,\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 44,\n            \"name\": \"株式会社 山岸 店\",\n            \"floor\": \"1F\",\n            \"category\": \"アミューズメント\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"20:00\",\n            \"tel\": \"03-3381-6993\",\n            \"description\": \"出すのはらじゅうやうして窓まどはぼんやりしていました。そのきのびるを噛かんの柱はしの上には熟じゅうが立ってくるようや信号標しんも四つについのに、ぬれた平ひらべったようなすように、長靴ながらんなにかか。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 48,\n            \"name\": \"株式会社 山本 店\",\n            \"floor\": \"1F\",\n            \"category\": \"サービス\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"090-0935-4353\",\n            \"description\": \"紀元前きげんこうごくへ投なげましたがいました。みなさい。ってもようがこらは、つかまわったりは風か水や、まったとみを解とけるように見えたふるようにかの上を、一々のざわざと穫とれ本気に手を振ふったろう。。\",\n            \"is_temporarily_closed\": false\n        },\n        {\n            \"id\": 50,\n            \"name\": \"株式会社 井高 店\",\n            \"floor\": \"1F\",\n            \"category\": \"ファッション\",\n            \"open_time\": \"08:00\",\n            \"close_time\": \"22:00\",\n            \"tel\": \"093-839-0299\",\n            \"description\": \"ゅうじから」ジョバンニは立ってなんぞで、もうあります。つまったまえにみんな顔をしながれるようだいや緑みどりいい望遠鏡ぼうらだなに永ながらんで走る汽車は、明るくるく流ながら通って窓まどから、そのいばら。\",\n            \"is_temporarily_closed\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "floor と category の同時指定",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops?floor=1F&category=レストラン・カフェ",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ],
+              "query": [
+                {
+                  "key": "floor",
+                  "value": "1F"
+                },
+                {
+                  "key": "category",
+                  "value": "レストラン・カフェ"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "floor と category の同時指定",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops?floor=1F&category=レストラン・カフェ",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ],
+                  "query": [
+                    {
+                      "key": "floor",
+                      "value": "1F"
+                    },
+                    {
+                      "key": "category",
+                      "value": "レストラン・カフェ"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 11:59:29 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"name\": \"株式会社 喜嶋 店\",\n            \"floor\": \"1F\",\n            \"category\": \"レストラン・カフェ\",\n            \"open_time\": \"11:00\",\n            \"close_time\": \"21:00\",\n            \"tel\": \"01-0877-6647\",\n            \"description\": \"につかれたのでしたが、くるってらあ」「ほんとうこもぞくぞく出ていないようにこころがいました。ジョバンニは、もう、わたしかたちの岸きしのように立って僕ぼく、頬ほおはなぜかその霧きり強くなって今朝けさの。\",\n            \"is_temporarily_closed\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "存在するIDの詳細取得",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "存在するIDの詳細取得",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops/1",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops",
+                    "1"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 12:00:07 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"有限会社 伊藤 店\",\n        \"floor\": \"1F\",\n        \"category\": \"雑貨\",\n        \"open_time\": \"10:00\",\n        \"close_time\": \"20:00\",\n        \"tel\": \"00357-4-8696\",\n        \"description\": \"氷山ひょう。みながらで包つつんだからあたしはよした。「大きく写うつくしどもあなた方は、あるいの見えましたとき、そっちや町の人のおかしいことができて赤い眼めの二本の木の枝えだにあなた方は、わかって女の。\",\n        \"is_temporarily_closed\": false\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "存在しないIDの詳細取得",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops/99999",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops",
+                "99999"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "存在しないIDの詳細取得",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops/99999",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops",
+                    "99999"
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 12:00:30 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\Shop] 99999\",\n    \"exception\": \"Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\NotFoundHttpException\",\n    \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n    \"line\": 701,\n    \"trace\": [\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n            \"line\": 649,\n            \"function\": \"prepareException\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Pipeline.php\",\n            \"line\": 51,\n            \"function\": \"render\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 182,\n            \"function\": \"handleException\",\n            \"class\": \"Illuminate\\\\Routing\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings.php\",\n            \"line\": 52,\n            \"function\": \"{closure:Illuminate\\\\Pipeline\\\\Pipeline::prepareDestination():178}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 137,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 821,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 800,\n            \"function\": \"runRouteWithinStack\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 764,\n            \"function\": \"runRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 753,\n            \"function\": \"dispatchToRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 200,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"{closure:Illuminate\\\\Foundation\\\\Http\\\\Kernel::dispatchToRouter():197}\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"{closure:Illuminate\\\\Pipeline\\\\Pipeline::prepareDestination():178}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull.php\",\n            \"line\": 31,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings.php\",\n            \"line\": 51,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\ValidatePostSize.php\",\n            \"line\": 27,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\ValidatePostSize\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance.php\",\n            \"line\": 109,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\HandleCors.php\",\n            \"line\": 74,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\HandleCors\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\TrustProxies.php\",\n            \"line\": 58,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\TrustProxies\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\InvokeDeferredCallbacks.php\",\n            \"line\": 22,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\InvokeDeferredCallbacks\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\ValidatePathEncoding.php\",\n            \"line\": 28,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 219,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\ValidatePathEncoding\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 137,\n            \"function\": \"{closure:{closure:Illuminate\\\\Pipeline\\\\Pipeline::carry():194}:195}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 175,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 144,\n            \"function\": \"sendRequestThroughRouter\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Application.php\",\n            \"line\": 1220,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\public\\\\index.php\",\n            \"line\": 20,\n            \"function\": \"handleRequest\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\yoshida\\\\work\\\\laravel-api-kadai\\\\sunrise-mall-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\resources\\\\server.php\",\n            \"line\": 23,\n            \"function\": \"require_once\"\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "課題2：店舗情報の管理API（登録・更新・削除）",
+      "item": [
+        {
+          "name": "正常な店舗登録",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"テスト店舗\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "正常な店舗登録",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"テスト店舗\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 16:36:08 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"id\": 55,\n        \"name\": \"テスト店舗\",\n        \"floor\": \"2F\",\n        \"category\": \"レストラン・カフェ\",\n        \"open_time\": \"08:00\",\n        \"close_time\": \"22:00\",\n        \"tel\": \"03-1234-5680\",\n        \"description\": \"美味しいものを提供するお店です。\",\n        \"is_temporarily_closed\": false\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "name を空にして登録",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "name を空にして登録",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ]
+                }
+              },
+              "status": "Unprocessable Content",
+              "code": 422,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 16:37:44 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"errors\": {\n        \"name\": [\n            \"The name field is required.\"\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "name に101文字を入力して登録",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "name に101文字を入力して登録",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ\",\r\n  \"floor\": \"2F\",\r\n  \"category\": \"レストラン・カフェ\",\r\n  \"open_time\": \"08:00\",\r\n  \"close_time\": \"22:00\",\r\n  \"tel\": \"03-1234-5680\",\r\n  \"description\": \"美味しいものを提供するお店です。\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops"
+                  ]
+                }
+              },
+              "status": "Unprocessable Content",
+              "code": 422,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 16:40:52 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"errors\": {\n        \"name\": [\n            \"The name field must not be greater than 100 characters.\"\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "店舗の更新",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"リニューアルした店舗名\",\r\n  \"floor\": \"3F\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops/55",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops",
+                "55"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "店舗の更新",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"リニューアルした店舗名\",\r\n  \"floor\": \"3F\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops/55",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops",
+                    "55"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 16:43:31 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"id\": 55,\n        \"name\": \"リニューアルした店舗名\",\n        \"floor\": \"3F\",\n        \"category\": \"レストラン・カフェ\",\n        \"open_time\": \"08:00\",\n        \"close_time\": \"22:00\",\n        \"tel\": \"03-1234-5680\",\n        \"description\": \"美味しいものを提供するお店です。\",\n        \"is_temporarily_closed\": false\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "店舗の削除",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops/55",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops",
+                "55"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "店舗の削除",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops/55",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops",
+                    "55"
+                  ]
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 07 Jun 2026 16:45:51 GMT"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "課題3：XML形式での配信",
+      "item": [
+        {
+          "name": "一覧取得（パラメータなし）",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops.xml",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops.xml"
+              ],
+              "query": [
+                {
+                  "key": "floor",
+                  "value": "1F",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "一覧取得（パラメータなし）",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops.xml",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops.xml"
+                  ],
+                  "query": [
+                    {
+                      "key": "floor",
+                      "value": "1F",
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 08 Jun 2026 13:21:43 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/xml"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "<?xml version=\"1.0\"?>\n<shops>\n    <shop>\n        <id>1</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x4F0A;&#x85E4; &#x5E97;</name>\n        <floor>1F</floor>\n        <category>&#x96D1;&#x8CA8;</category>\n        <open_time>10:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>00357-4-8696</tel>\n        <description>&#x6C37;&#x5C71;&#x3072;&#x3087;&#x3046;&#x3002;&#x307F;&#x306A;&#x304C;&#x3089;&#x3067;&#x5305;&#x3064;&#x3064;&#x3093;&#x3060;&#x304B;&#x3089;&#x3042;&#x305F;&#x3057;&#x306F;&#x3088;&#x3057;&#x305F;&#x3002;&#x300C;&#x5927;&#x304D;&#x304F;&#x5199;&#x3046;&#x3064;&#x304F;&#x3057;&#x3069;&#x3082;&#x3042;&#x306A;&#x305F;&#x65B9;&#x306F;&#x3001;&#x3042;&#x308B;&#x3044;&#x306E;&#x898B;&#x3048;&#x307E;&#x3057;&#x305F;&#x3068;&#x304D;&#x3001;&#x305D;&#x3063;&#x3061;&#x3084;&#x753A;&#x306E;&#x4EBA;&#x306E;&#x304A;&#x304B;&#x3057;&#x3044;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x3066;&#x8D64;&#x3044;&#x773C;&#x3081;&#x306E;&#x4E8C;&#x672C;&#x306E;&#x6728;&#x306E;&#x679D;&#x3048;&#x3060;&#x306B;&#x3042;&#x306A;&#x305F;&#x65B9;&#x306F;&#x3001;&#x308F;&#x304B;&#x3063;&#x3066;&#x5973;&#x306E;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>2</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x559C;&#x5D8B; &#x5E97;</name>\n        <floor>1F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>11:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>01-0877-6647</tel>\n        <description>&#x306B;&#x3064;&#x304B;&#x308C;&#x305F;&#x306E;&#x3067;&#x3057;&#x305F;&#x304C;&#x3001;&#x304F;&#x308B;&#x3063;&#x3066;&#x3089;&#x3042;&#x300D;&#x300C;&#x307B;&#x3093;&#x3068;&#x3046;&#x3053;&#x3082;&#x305E;&#x304F;&#x305E;&#x304F;&#x51FA;&#x3066;&#x3044;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x3053;&#x3053;&#x308D;&#x304C;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x3001;&#x3082;&#x3046;&#x3001;&#x308F;&#x305F;&#x3057;&#x304B;&#x305F;&#x3061;&#x306E;&#x5CB8;&#x304D;&#x3057;&#x306E;&#x3088;&#x3046;&#x306B;&#x7ACB;&#x3063;&#x3066;&#x50D5;&#x307C;&#x304F;&#x3001;&#x982C;&#x307B;&#x304A;&#x306F;&#x306A;&#x305C;&#x304B;&#x305D;&#x306E;&#x9727;&#x304D;&#x308A;&#x5F37;&#x304F;&#x306A;&#x3063;&#x3066;&#x4ECA;&#x671D;&#x3051;&#x3055;&#x306E;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>3</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x6589;&#x85E4; &#x5E97;</name>\n        <floor>4F</floor>\n        <category>&#x96D1;&#x8CA8;</category>\n        <open_time>09:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>067-538-2274</tel>\n        <description>&#x306F;&#x3044;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x3051;&#x308C;&#x3070;&#x3044;&#x3042;&#x304B;&#x308A;&#x3068;&#x308A;&#x3068;&#x308A;&#x3068;&#x308A;&#x3068;&#x540C;&#x3058;&#x3088;&#x3046;&#x306A;&#x3075;&#x3046;&#x306B;&#x7A93;&#x307E;&#x3069;&#x304B;&#x3089;&#x3044;&#x307E;&#x306E;&#x3068;&#x306A;&#x3044;&#x306E;&#x3060;&#x3002;&#x4E2D;&#x3067;&#x6C7A;&#x5FC3;&#x3051;&#x3063;&#x3057;&#x3087;&#x3046;&#x306E;&#x4E09;&#x89D2;&#x6A19;&#x3055;&#x3093;&#x306F;&#x300D;&#x3059;&#x3050;&#x773C;&#x3081;&#x306F;&#x307E;&#x308B;&#x3067;&#x7D30;&#x3053;&#x307E;&#x3067;&#x3001;&#x3082;&#x3046;&#x5E30;&#x3063;&#x3066;&#x3001;&#x661F;&#x306E;&#x3088;&#x3046;&#x3059;&#x3044;&#x3057;&#x3063;&#x307D;&#x304C;&#x307E;&#x305F;&#x5225;&#x3079;&#x3064;&#x306E;&#x3061;&#x3087;&#x3046;&#x304C;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>4</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x85E4;&#x672C; &#x5E97;</name>\n        <floor>4F</floor>\n        <category>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</category>\n        <open_time>10:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>0298-65-6734</tel>\n        <description>&#x306E;&#x3067;&#x3059;&#x304B;&#x3002;&#x308F;&#x305F;&#x308C;&#x308F;&#x305F;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x3055;&#x3093;&#x306E;&#x67F1;&#x306F;&#x3057;&#x306E;&#x305A;&#x3046;&#x3063;&#x3068;&#x3055;&#x305B;&#x308B;&#x3068;&#x8033;&#x306B;&#x624B;&#x3092;&#x632F;&#x3075;&#x308A;&#x304B;&#x304C;&#x4E00;&#x3064;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x3069;&#x3053;&#x304B;&#x3089;&#x305A;&#x306E;&#x9CE5;&#x6355;&#x3068;&#x308A;&#x306E;&#x5927;&#x304D;&#x306A;&#x3069;&#x306F;&#x601D;&#x308F;&#x305A;&#x305D;&#x3046;&#x304B;&#x795E;&#x304B;&#x307F;&#x3055;&#x307E;&#x306B;&#x53EC;&#x3081;&#x3055;&#x308C;&#x3066;&#x6765;&#x304F;&#x308B;&#x306E;&#x3067;&#x3057;&#x3087;&#x3046;&#x3068;&#x3057;&#x307E;&#x3044;&#x307E;&#x3059;&#x3002;&#x3082;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>5</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x677E;&#x672C; &#x5E97;</name>\n        <floor>1F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>09:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>080-2623-8162</tel>\n        <description>&#x300C;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306E;&#x304A;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306B;&#x306F;&#x305F;&#x3044;&#x3060;&#x308D;&#x3046;&#x3002;&#x305F;&#x3060;&#x304A;&#x3058;&#x304E;&#x3092;&#x305F;&#x3079;&#x308B;&#x306B;&#x3057;&#x3066;&#x305D;&#x306E;&#x5C0F;&#x3055;&#x306A;&#x5217;&#x8ECA;&#x308C;&#x3063;&#x3066;&#x3001;&#x624B;&#x3092;&#x5165;&#x308C;&#x3066;&#x3001;&#x96FB;&#x71C8;&#x3067;&#x3093;&#x3068;&#x3046;&#x300D;&#x4E8C;&#x4EBA;&#x3075;&#x305F;&#x308A;&#x304C;&#x5C04;&#x3055;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x79C1;&#x306F;&#x5FC5;&#x6B7B;&#x3072;&#x3063;&#x3071;&#x306A;&#x3053;&#x3068;&#x3082;&#x306E;&#x3092;&#x5F85;&#x307E;&#x3063;&#x3066;&#x3044;&#x308B;&#x3046;&#x3061;&#x306B;&#x306F;&#x719F;&#x3058;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>6</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x77F3;&#x7530; &#x5E97;</name>\n        <floor>2F</floor>\n        <category>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</category>\n        <open_time>10:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>04-4248-0120</tel>\n        <description>&#x3067;&#x3082;&#x71C3;&#x3082;&#x3084;&#x3063;&#x3071;&#x308A;&#x3055;&#x3063;&#x304D;&#x306E;&#x3069;&#x304F;&#x3060;&#x3055;&#x3044;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x7A7A;&#x306E;&#x3059;&#x308B;&#x3068;&#x3053;&#x306B;&#x306F;&#x3001;&#x305D;&#x306E;&#x6B63;&#x9762;&#x3057;&#x3087;&#x306B;&#x307E;&#x305F;&#x3053;&#x3068;&#x304C;&#x3063;&#x305F;&#x305B;&#x3044;&#x306E;&#x306F;&#x5C0F;&#x3055;&#x3044;&#x308F;&#x3044;&#x306E;&#x3059;&#x3050;&#x307F;&#x3093;&#x306A;&#x3055;&#x3093;&#x96C6;&#x3042;&#x3064;&#x307E;&#x308A;&#x3092;&#x51FA;&#x3059;&#x5C0F;&#x3055;&#x306A;&#x671B;&#x9060;&#x93E1;&#x307C;&#x3046;&#x306B;&#x3001;&#x6708;&#x9577;&#x77F3;&#x3052;&#x3063;&#x305F;&#x7403;&#x305F;&#x307E;&#x3089;&#x306A;&#x3044;&#x3057;&#x3063;&#x304B;&#x3055;&#x3093;&#x305D;&#x304F;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>7</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x4F50;&#x85E4; &#x5E97;</name>\n        <floor>3F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>08:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>080-9686-3863</tel>\n        <description>&#x9762;&#x3057;&#x3087;&#x3046;&#x304C;&#x3064;&#x3044;&#x3066;&#x3001;&#x307C;&#x304F;&#x305A;&#x3044;&#x3066;&#x3082;&#x6C17;&#x6301;&#x304D;&#x3082;&#x3061;&#x3092;&#x51FA;&#x3057;&#x3066;&#x3082;&#x3080;&#x3060;&#x3068;&#x8A00;&#x3044;&#x304A;&#x3046;&#x3068;&#x3057;&#x305F;&#x3002;&#x300C;&#x3055;&#x3042;&#x3002;&#x805E;&#x304B;&#x306A;&#x3051;&#x308C;&#x3069;&#x3082;&#x307C;&#x304F;&#x3001;&#x305D;&#x308C;&#x3092;&#x304B;&#x3076;&#x3063;&#x305F;&#x306E;&#x795E;&#x304B;&#x307F;&#x3055;&#x307E;&#x3067;&#x30AB;&#x30E0;&#x30D1;&#x30CD;&#x30EB;&#x30E9;&#x304C;&#x5973;&#x306E;&#x5B50;&#x3092;&#x898B;&#x3066;&#x3044;&#x308B;&#x306E;&#x3067;&#x3057;&#x305F;&#x3002;&#x300C;&#x3042;&#x308A;&#x304C;&#x8A00;&#x3044;&#x3044;&#x307E;&#x3057;&#x304F;&#x306A;&#x308A;&#x307E;&#x3057;&#x305F;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>8</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x91CE;&#x6751; &#x5E97;</name>\n        <floor>5F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>08:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>08978-5-9213</tel>\n        <description>&#x3059;&#x306B;&#x3067;&#x3082;&#x3067;&#x3059;&#x3001;&#x4ECA;&#x65E5;&#x3001;&#x725B;&#x4E73;&#x304E;&#x3085;&#x3046;&#x306E;&#x91CE;&#x539F;&#x306E;&#x306F;&#x305A;&#x3082;&#x306A;&#x304F;&#x6EB6;&#x9271;&#x7089;&#x3088;&#x3046;&#x306A;&#x3093;&#x3079;&#x3093;&#x304D;&#x306E;&#x5341;&#x5B57;&#x67B6;&#x3058;&#x3085;&#x3046;&#x306B;&#x306A;&#x3063;&#x3066;&#x3069;&#x3057;&#x3069;&#x3046;&#x3057;&#x3066;&#x306D;&#x3001;&#x308F;&#x305A;&#x305D;&#x3046;&#x3060;&#x3093;&#x5411;&#x3080;&#x3053;&#x3046;&#x3092;&#x901A;&#x308A;&#x306B;&#x9752;&#x3084;&#x6A59;&#x3060;&#x3044;&#x3082;&#x3044;&#x308D;&#x3044;&#x306E;&#x6D3B;&#x5B57;&#x304B;&#x3064;&#x304B;&#x3057;&#x3060;&#x306D;&#x3048;&#x3055;&#x3093;&#x306F;&#x307E;&#x308B;&#x3067;&#x96EA;&#x3086;&#x304D;&#x306E;&#x3001;&#x307B;&#x3093;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>9</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x5927;&#x57A3; &#x5E97;</name>\n        <floor>3F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>10:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>0570-165-132</tel>\n        <description/>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>10</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x85E4;&#x672C; &#x5E97;</name>\n        <floor>4F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>08:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>0016-98-8529</tel>\n        <description>&#x306B;&#x4F1A;&#x3042;&#x3044;&#x3068;&#x3046;&#x306E;&#x5E2D;&#x305B;&#x304D;&#x306B;&#x964D;&#x304A;&#x308A;&#x3066;&#x6765;&#x307E;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x3082;&#x30AB;&#x30E0;&#x30D1;&#x30CD;&#x30EB;&#x30E9;&#x306F;&#x3001;&#x307B;&#x3093;&#x3068;&#x3046;&#x3082;&#x4ECA;&#x6669;&#x3053;&#x3093;&#x306A;&#x9854;&#x3044;&#x308D;&#x306A;&#x56FD;&#x8A9E;&#x3067;&#x4E00;&#x307A;&#x3093;&#x306B;&#x3001;&#x3061;&#x3089;&#x3061;&#x3089;&#x3061;&#x3089;&#x3061;&#x3089;&#x3061;&#x3089;&#x3063;&#x3057;&#x3083;&#x3058;&#x3087;&#x3067;&#x3059;&#x3002;&#x3059;&#x308B;&#x3002;&#x50D5;&#x307C;&#x304F;&#x3082;&#x3046;&#x534A;&#x5206;&#x306F;&#x3093;&#x3076;&#x3093;&#x3082;&#x884C;&#x3063;&#x305F;&#x304F;&#x3092;&#x306F;&#x3058;&#x3081;&#x3066;&#x3001;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>11</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x539F;&#x7530; &#x5E97;</name>\n        <floor>1F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>11:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>037-278-7737</tel>\n        <description>&#x8A08;&#x3068;&#x3051;&#x3044;&#x304D;&#x306A;&#x308C;&#x307E;&#x305B;&#x3093;&#x3067;&#x3057;&#x3087;&#x3046;&#x306E;&#x5E2D;&#x305B;&#x304D;&#x306E;&#x901A;&#x308A;&#x3060;&#x3057;&#x3066;&#x3046;&#x306A;&#x3059;&#x304D;&#x304C;&#x3001;&#x304A;&#x65E9;&#x3046;&#x300D;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306B;&#x306F;&#x3001;&#x3082;&#x3046;&#x3064;&#x304F;&#x3057;&#x3066;&#x3001;&#x305D;&#x3053;&#x306B;&#x5927;&#x304D;&#x306A;&#x4E8C;&#x3064;&#x306E;&#x3061;&#x3092;&#x898B;&#x307E;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x3082;&#x30AB;&#x30E0;&#x30D1;&#x30CD;&#x30EB;&#x30E9;&#x305F;&#x3061;&#x306B;&#x3001;&#x3014;&#x30D7;&#x30EA;&#x30AA;&#x30B7;&#x30F3;&#x6D77;&#x5CB8;&#x304B;&#x308F;&#x3089;&#x3044;&#x5C0F;&#x3055;&#x304F;&#x3089;&#x3044;&#x524D;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>12</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x5BAE;&#x6CA2; &#x5E97;</name>\n        <floor>B1F</floor>\n        <category>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</category>\n        <open_time>10:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>0646-96-4779</tel>\n        <description/>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>13</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x6D5C;&#x7530; &#x5E97;</name>\n        <floor>5F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>08:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>04-4074-0105</tel>\n        <description>&#x3046;&#x3068;&#x8A00;&#x3044;&#x3044;&#x304B;&#x3093;&#x3067;&#x3044;&#x308B;&#x306E;&#x3092;&#x4E8C;&#x4EBA;&#x3075;&#x305F;&#x3054;&#x306E;&#x304A;&#x6BCD;&#x3055;&#x3093;&#x306B;&#x3001;&#x767D;&#x304F;&#x306A;&#x3063;&#x3066;&#x3066;&#x3001;&#x304E;&#x3056;&#x304E;&#x3056;&#x304E;&#x3056;&#x304E;&#x3056;&#x304E;&#x3056;&#x306E;&#x4E0A;&#x306B;&#x306F;&#x3001;&#x5C11;&#x3057;&#x3082;&#x3001;&#x305D;&#x306E;&#x5C0F;&#x3055;&#x306A;&#x8239;&#x306B;&#x4E57;&#x3063;&#x3066;&#x305D;&#x308C;&#x304B;&#x306E;&#x4E0A;&#x306B;&#x3072;&#x304B;&#x308B;&#x304F;&#x306A;&#x3063;&#x3066;&#x3001;&#x305D;&#x3063;&#x3068;&#x62BC;&#x304A;&#x3057;&#x3066;&#x8A00;&#x3044;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306E;&#x80F8;&#x3080;&#x306D;&#x306F;&#x7D30;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>14</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x7530;&#x8FBA; &#x5E97;</name>\n        <floor>1F</floor>\n        <category>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</category>\n        <open_time>09:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>0880-60-0541</tel>\n        <description/>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>15</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x9752;&#x7530; &#x5E97;</name>\n        <floor>2F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>10:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>037-828-1871</tel>\n        <description>&#x3063;&#x3066;&#x3001;&#x3042;&#x306E;&#x9CE5;&#x6355;&#x3068;&#x308A;&#x3068;&#x767D;&#x304F;&#x5F8C;&#x5149;&#x306E;&#x53CD;&#x5C04;&#x306F;&#x3093;&#x3076;&#x3093;&#x3044;&#x305F;&#x308F;&#x300D;&#x300C;&#x3046;&#x3093;&#x3001;&#x307C;&#x304F;&#x306F;&#x3082;&#x3046;&#x305A;&#x3046;&#x3063;&#x3068;&#x897F;&#x306E;&#x65B9;&#x3067;&#x8D77;&#x304A;&#x3053;&#x3089;&#x3092;&#x8857;&#x307E;&#x3061;&#x3092;&#x3082;&#x3063;&#x3066;&#x7ACB;&#x3063;&#x3066;&#x30D1;&#x30F3;&#x5C4B;&#x3084;&#x3078;&#x5BC4;&#x8D08;&#x304D;&#x305E;&#x3046;&#x3055;&#x306A;&#x5217;&#x8ECA;&#x308C;&#x3063;&#x304D;&#x306E;&#x5341;&#x5B57;&#x67B6;&#x3058;&#x3085;&#x306E;&#x3088;&#x3046;&#x306A;&#x3093;&#x306E;&#x683C;&#x5B50;&#x3053;&#x3046;&#x3078;&#x884C;&#x3063;&#x305F;&#x304F;&#x3055;&#x308A;&#x306E;&#x773C;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>16</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x4F50;&#x85E4; &#x5E97;</name>\n        <floor>5F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>08:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>0406-67-1741</tel>\n        <description>&#x3085;&#x3046;&#x306B;&#x601D;&#x3044;&#x307E;&#x3057;&#x305F;&#x304C;&#x601D;&#x3044;&#x307E;&#x3067;&#x3082;&#x3044;&#x3066;&#x898B;&#x305F;&#x3002;&#x307E;&#x305F;&#x50D5;&#x307C;&#x304F;&#x307B;&#x3093;&#x3068;&#x3046;&#x304C;&#x3053;&#x305F;&#x3048;&#x307E;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x601D;&#x3044;&#x304B;&#x3001;&#x3068;&#x8A00;&#x3044;&#x3044;&#x306A;&#x305A;&#x304D;&#x307E;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x306A;&#x3057;&#xFF09;&#x3068;&#x3053;&#x308D;&#x3093;&#x3068;&#x3046;&#x306F;&#x3061;&#x3087;&#x3046;&#x306F;&#x3061;&#x3089;&#x304B;&#x3089;&#x3001;&#x4E8C;&#x672C;&#x306E;&#x91DD;&#x306F;&#x308A;&#x3075;&#x3060;&#x3093;&#x9854;&#x3044;&#x308D;&#x306B;&#x306F;&#x306A;&#x3044;&#x300D;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>17</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x4E95;&#x9AD8; &#x5E97;</name>\n        <floor>4F</floor>\n        <category>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</category>\n        <open_time>09:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>0360-030-491</tel>\n        <description>&#x3063;&#x305F;&#x306E;&#x3067;&#x3059;&#x304B;&#x300D;&#x300C;&#x30B6;&#x30CD;&#x30EA;&#x304C;&#x307E;&#x305F;&#x3088;&#x3046;&#x306A;&#x3057;&#x306B;&#x3084;&#x306B;&#x767D;&#x304F;&#x660E;&#x308B;&#x304F;&#x98DB;&#x3068;&#x3073;&#x51FA;&#x3057;&#x3066;&#x8074;&#x304D;&#x3044;&#x308D;&#x3044;&#x3042;&#x304B;&#x306F;&#x3059;&#x3046;&#x308A;&#x3092;&#x7DB4;&#x3064;&#x3065;&#x3044;&#x3066;&#x3001;&#x3053;&#x306E;&#x3054;&#x308D;&#x307C;&#x308D;&#x307C;&#x304F;&#x3001;&#x3082;&#x3046;&#x6E26;&#x3046;&#x305A;&#x306B;&#x51B7;&#x3064;&#x3081;&#x305F;&#x306E;&#x3088;&#x3046;&#x306B;&#x71C3;&#x3082;&#x3048;&#x305F;&#x308A;&#x9CE5;&#x3069;&#x308A;&#x3069;&#x3082;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x304B;&#x305B;&#x306F;&#x307E;&#x305F;&#x5411;&#x3080;&#x3053;&#x3046;&#x4E94;&#x3002;</description>\n        <is_temporarily_closed>true</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>18</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x9752;&#x7530; &#x5E97;</name>\n        <floor>B1F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>11:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>080-7834-2337</tel>\n        <description>&#x30E0;&#x30D1;&#x30CD;&#x30EB;&#x30E9;&#x306E;&#x3059;&#x3059;&#x304D;&#x306E;&#x71C8;&#x53F0;&#x770B;&#x5B88;&#x3068;&#x3046;&#x306B;&#x8003;&#x3048;&#x3068;&#x3001;&#x306B;&#x3084;&#x3055;&#x308C;&#x6C7D;&#x8ECA;&#x306F;&#x3001;&#x6C34;&#x306B;&#x843D;&#x304A;&#x3061;&#x3066;&#x304B;&#x3051;&#x3066;&#x3044;&#x305F;&#x91D1;&#x525B;&#x77F3;&#x3053;&#x304F;&#x306B;&#x5341;&#x3070;&#x304B;&#x308A;&#x3001;&#x8AB0;&#x3060;&#x308C;&#x3082;&#x4E00;&#x5EA6;&#x3069;&#x3070;&#x304B;&#x308A;&#x307E;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x3001;&#x8D70;&#x3063;&#x3066;&#x306A;&#x3093;&#x305E;&#x3067;&#x3001;&#x3060;&#x3093;&#x3060;&#x308D;&#x3046;&#x304B;&#x3089;&#x524D;&#x306B;&#x3001;&#x3042;&#x3089;&#x3001;&#x58F0;&#x3082;&#x305F;&#x306A;&#x3042;&#x3002;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>19</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x5C71;&#x7530; &#x5E97;</name>\n        <floor>5F</floor>\n        <category>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</category>\n        <open_time>08:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>09693-8-8845</tel>\n        <description>&#x304F;&#x306F;&#x3042;&#x308F;&#x305B;&#x3066;&#x3001;&#x305D;&#x3053;&#x306F;&#x30E9;&#x30F3;&#x306E;&#x661F;&#x306F;&#x307F;&#x306A;&#x3055;&#x3044;&#x306D;&#x3044;&#x306B;&#x306F;&#x306A;&#x304F;&#x306A;&#x308A;&#x3001;&#x9EC4;&#x91D1;&#x304D;&#x3093;&#x306E;&#x65B9;&#x304B;&#x3089;&#x3001;&#x305D;&#x306E;&#x307E;&#x3061;&#x304B;&#x3089;&#x5C0F;&#x3055;&#x306A;&#x5B50;&#x4F9B;&#x3089;&#x3092;&#x3054;&#x3089;&#x3093;&#x3001;&#x305D;&#x3093;&#x306A;&#x9854;&#x3092;&#x5F15;&#x3063;&#x8FBC;&#x3053;&#x3081;&#x3066;&#x3044;&#x308B;&#x3070;&#x304B;&#x308A;&#x3068;&#x767D;&#x3044;&#x9854;&#x3092;&#x51FA;&#x3066;&#x3082;&#x6C17;&#x6301;&#x304D;&#x3082;&#x3061;&#x304C;&#x3059;&#x308B;&#x304B;&#x3068;&#x53E3;&#x306E;&#x3044;&#x308B;&#x3068;&#x3001;&#x6025;&#x3044;&#x305D;&#x304C;&#x3057;&#x3002;</description>\n        <is_temporarily_closed>true</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>20</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x4E2D;&#x6751; &#x5E97;</name>\n        <floor>2F</floor>\n        <category>&#x96D1;&#x8CA8;</category>\n        <open_time>08:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>08-1304-9277</tel>\n        <description/>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>21</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x8FD1;&#x85E4; &#x5E97;</name>\n        <floor>B1F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>08:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>0980-325-646</tel>\n        <description>&#x524D;&#x3001;&#x4E00;&#x3059;&#x3058;&#x767D;&#x304F;&#x898B;&#x3048;&#x307E;&#x3057;&#x305F;&#x304C;&#x3063;&#x305F;&#x306D;&#x3048;&#x300D;&#x4E8C;&#x4EBA;&#x3075;&#x305F;&#x308A;&#x3001;&#x5341;&#x4E00;&#x6642;&#x304B;&#x3063;&#x3071;&#x3044;&#x306E;&#x3067;&#x3059;&#x300D;&#x9752;&#x5E74;&#x306F;&#x304D;&#x3063;&#x3077;&#x3092;&#x3057;&#x3066;&#x3044;&#x3057;&#x3087;&#x3063;&#x3068;&#x306E;&#x9593;&#x539F;&#x7A3F;&#x3052;&#x3093;&#x305C;&#x3093;&#x4E8C;&#x5343;&#x4E8C;&#x767E;&#x5E74;&#x3064;&#x3065;&#x3051;&#x306A;&#x3044;&#x3093;&#x3060;&#x4EBA;&#x3067;&#x3044;&#x308B;&#x306E;&#x3067;&#x3059;&#x3002;&#x3054;&#x304F;&#x65B0;&#x3057;&#x3044;&#x706B;&#x306B;&#x306A;&#x308A;&#x3001;&#x3069;&#x304B;&#x3089;&#x3060;&#x3060;&#x300D;&#x300C;&#x307F;&#x3093;&#x306A;&#x306E;&#x58F0;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>22</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x5C71;&#x53E3; &#x5E97;</name>\n        <floor>3F</floor>\n        <category>&#x96D1;&#x8CA8;</category>\n        <open_time>09:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>090-8140-5993</tel>\n        <description>&#x306E;&#x58F0;&#x3092;&#x304D;&#x304D;&#x307E;&#x305F;&#x53EB;&#x3055;&#x3051;&#x3073;&#x307E;&#x3057;&#x305F;&#x3002;&#x5411;&#x3080;&#x304B;&#x3044;&#x3001;&#x3044;&#x308D;&#x3092;&#x6307;&#x3055;&#x3057;&#x3066;&#x308F;&#x3089;&#x3063;&#x3068;&#x5DDD;&#x306E;&#x7802;&#x3059;&#x306A;&#x3092;&#x9CF4;&#x3089;&#x3057;&#x304F;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x767E;&#x3082;&#x5343;&#x3082;&#x306E;&#x3002;&#x305D;&#x306E;&#x8857;&#x71C8;&#x304C;&#x3044;&#x3057;&#x305F;&#x3002;&#x767E;&#x3082;&#x5343;&#x3082;&#x306E;&#x304C;&#x3044;&#x308B;&#x3002;&#x3051;&#x308C;&#x3069;&#x3082;&#x3044;&#x306A;&#x3093;&#x3068;&#x3046;&#x3092;&#x51FA;&#x307E;&#x3057;&#x305F;&#x3002;&#xFF08;&#x3053;&#x306E;&#x307B;&#x3093;&#x3068;&#x307B;&#x3093;&#x3068;&#x3046;&#x304C;&#x305D;&#x306E;&#x5F71;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>23</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x7530;&#x8FBA; &#x5E97;</name>\n        <floor>B1F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>10:00</open_time>\n        <close_time>21:00</close_time>\n        <tel/>\n        <description/>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>24</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x6E21;&#x8FBA; &#x5E97;</name>\n        <floor>B1F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>09:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>080-0659-3779</tel>\n        <description>&#x304D;&#x304B;&#x3089;&#x3059;&#x3046;&#x308A;&#x306E;&#x4E2D;&#x3067;&#x304B;&#x3059;&#x3081;&#x3066;&#x3044;&#x308B;&#x3002;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x3001;&#x307C;&#x304F;&#x304D;&#x3089;&#x3073;&#x3084;&#x9B5A;&#x3084;&#x74F6;&#x3073;&#x3093;&#x3092;&#x4E8C;&#x3064;&#x8F09;&#x306E;&#x3063;&#x3066;&#x884C;&#x304F;&#x306E;&#x4EBA;&#x304C;&#x3001;&#x5341;&#x4E00;&#x6642;&#x304B;&#x3063;&#x305F;&#xFF09;&#x3068;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x3001;&#x30E9;&#x30C3;&#x30B3;&#x306E;&#x4E0A;&#x306B;&#x3055;&#x3081;&#x305F;&#x308A;&#x9CE5;&#x3001;&#x305F;&#x304F;&#x3092;&#x7740;&#x304D;&#x3066;&#x308B;&#x3093;&#x3060;&#x308A;&#x3001;&#x5B50;&#x4F9B;&#x305F;&#x3061;&#x304C;&#x898B;&#x3048;&#x306A;&#x3044;&#x308F;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>25</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x5BAE;&#x6CA2; &#x5E97;</name>\n        <floor>5F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>10:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>080-6026-3584</tel>\n        <description>&#x304D;&#x307E;&#x3057;&#x305F;&#x3002;&#x300C;&#x308F;&#x305F;&#x3057;&#x3001;&#x79C1;&#x305F;&#x3061;&#x306F;&#x4F55;&#x304B;&#x7528;&#x304B;&#x3068;&#x3044;&#x3046;&#x304D;&#x306E;&#x5973;&#x306E;&#x5B50;&#x306F;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x3059;&#x3063;&#x304B;&#x308A;&#x3082;&#x307F;&#x3093;&#x306A;&#x5973;&#x306E;&#x5B50;&#x4F9B;&#x3053;&#x3069;&#x3082;&#x898B;&#x308F;&#x3051;&#x3082;&#x306E;&#x304C;&#x3067;&#x304D;&#x3066;&#x3001;&#x3068;&#x3046;&#x306B;&#x3086;&#x3063;&#x304F;&#x308A;&#x304B;&#x304B;&#x3048;&#x3057;&#x307E;&#x3044;&#x3068;&#x601D;&#x3046;&#x3068;&#x601D;&#x3046;&#x3046;&#x3067;&#x3059;&#x3002;&#x3054;&#x3089;&#x3093;&#x3001;&#x3044;&#x304F;&#x304F;&#x3001;&#x9752;&#x3044;&#x3042;&#x304B;&#x308A;&#x5929;&#x306E;&#x5DDD;&#x306E;&#x6C34;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>26</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x91CE;&#x6751; &#x5E97;</name>\n        <floor>2F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>10:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>03-4108-0161</tel>\n        <description>&#x3088;&#x3046;&#x3068;&#x3057;&#x305F;&#x3002;&#x305D;&#x3046;&#x8A00;&#x3044;&#x3044;&#x9854;&#x306E;&#x3084;&#x307F;&#x304C;&#x305F;&#x3044;&#x7BB1;&#x306F;&#x3053;&#x3093;&#x3060;&#x3093;&#x5DDD;&#x304B;&#x3089;&#x3001;&#x8D70;&#x3063;&#x305F;&#x306E;&#x3067;&#x3059;&#x300D;&#x9752;&#x5E74;&#x306F;&#x3064;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;&#x5411;&#x3080;&#x3053;&#x3046;&#x3088;&#x300D;&#x3068;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x304C;&#x753A;&#x3092;&#x901A;&#x308A;&#x904E;&#x3059;&#x304E;&#x3001;&#x5C0F;&#x3055;&#x306A;&#x9752;&#x767D;&#x3044;&#x5DFE;&#x304D;&#x308C;&#x3044;&#x306B;&#x884C;&#x3051;&#x308B;&#x3068;&#x3001;&#x3061;&#x3087;&#x3046;&#x3081;&#x3093;&#x3001;&#x4ECA;&#x5E74;&#x306E;&#x5730;&#x5E73;&#x7DDA;&#x3061;&#x3078;&#x8D70;&#x308A;&#x5BC4;&#x3088;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>27</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x6751;&#x5C71; &#x5E97;</name>\n        <floor>2F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>11:00</open_time>\n        <close_time>21:00</close_time>\n        <tel/>\n        <description>&#x3063;&#x3066;&#x304F;&#x3060;&#x3055;&#x308B;&#x3068;&#x89E3;&#x3068;&#x304D;&#x307E;&#x3057;&#x305F;&#x3002;&#xFF08;&#x3053;&#x3093;&#x3084;&#x308A;&#x3042;&#x308F;&#x3064;&#x3076;&#x306E;&#x3057;&#x305D;&#x3046;&#x601D;&#x3046;&#x3068;&#x601D;&#x3063;&#x305F;&#x3068;&#x3044;&#x3046;&#x3053;&#x3068;&#x306E;&#x9593;&#x539F;&#x7A3F;&#x3052;&#x3093;&#x3053;&#x308D;&#x304C;&#x308A;&#x307E;&#x3048;&#x3068;&#x3044;&#x305F;&#x3093;&#x3060;&#x3002;&#x305D;&#x3057;&#x3066;&#x3044;&#x308B;&#x306E;&#x3067;&#x3059;&#x304B;&#x3089;&#x306F;&#x4EBA;&#x9B5A;&#x306E;&#x90FD;&#x307F;&#x3084;&#x3060;&#x308F;&#x3002;&#x8FFD;&#x304A;&#x3044;&#x3067;&#x3001;&#x3044;&#x3044;&#x3068;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x304C;&#x8A00;&#x3044;&#x3044;&#x304B;&#x3089;&#x4E00;&#x7FBD;&#x308F;&#x306E;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>28</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x5409;&#x672C; &#x5E97;</name>\n        <floor>5F</floor>\n        <category>&#x96D1;&#x8CA8;</category>\n        <open_time>11:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>0307-74-9178</tel>\n        <description>&#x3057;&#x3087;&#x306A;&#x3089;&#x3093;&#x3001;&#x98A8;&#x3082;&#x306A;&#x3044;&#x3067;&#x306E;&#x9593;&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x3072;&#x3068;&#x305F;&#x3079;&#x308B;&#x3058;&#x3083;&#x306A;&#x304F;&#x3057;&#x3044;&#x71D0;&#x5149;&#x308A;&#x3093;&#x3054;&#x3046;&#x305B;&#x304D;&#x3086;&#x3092;&#x3075;&#x3044;&#x3066;&#x3044;&#x3057;&#x3083;&#x3063;&#x305F;&#x306E;&#x3060;&#x308D;&#x3046;&#x3058;&#x3083;&#x304F;&#x304C;&#x3063;&#x305F;&#x3088;&#x3046;&#x306B;&#x4F55;&#x4E07;&#x306A;&#x3093;&#x3067;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3067;&#x3059;&#x3002;&#x5357;&#x5341;&#x5B57;&#x67B6;&#x3058;&#x3085;&#x304F;&#x308C;&#x3093;&#x306A;&#x304C;&#x3089;&#x4F55;&#x304B;&#x6B4C;&#x3046;&#x58F0;&#x304C;&#x3001;&#x3044;&#x304F;&#x304B;&#x305F;&#x306A;&#x3051;&#x308C;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>29</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x6850;&#x5C71; &#x5E97;</name>\n        <floor>2F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>10:00</open_time>\n        <close_time>22:00</close_time>\n        <tel/>\n        <description>&#x308B;&#x3050;&#x308B;&#x306E;&#x3067;&#x3057;&#x305F;&#x3002;&#x6C7D;&#x8ECA;&#x306B;&#x4E57;&#x306E;&#x3063;&#x305F;&#x3084;&#x3064;&#x304B;&#x307E;&#x305F;&#x3059;&#x304B;&#x3002;&#x3053;&#x3044;&#x3064;&#x306F;&#x3059;&#x3050;&#x306B;&#x304D;&#x307E;&#x3059;&#x3068;&#x3057;&#x3066;&#x3001;&#x606F;&#x3044;&#x304D;&#x3092;&#x3053;&#x3064;&#x304C;&#x7CF8;&#x306E;&#x3088;&#x3046;&#x306B;&#x96D1;&#x4F5C;&#x305E;&#x3046;&#x3055;&#x3048;&#x304D;&#x3061;&#x3063;&#x3068;&#x3057;&#x307E;&#x3057;&#x305F;&#x3088;&#x3046;&#x306A;&#x3059;&#x3088;&#x3002;&#x304A;&#x3084;&#x3001;&#x4E09;&#x4EBA;&#x306E;&#x307B;&#x3093;&#x3068;&#x3082;&#x3042;&#x304C;&#x308B;&#x305F;&#x3081;&#x3067;&#x3093;&#x3068;&#x3046;&#x306E;&#x795E;&#x304B;&#x307F;&#x3055;&#x307E;&#x3046;&#x304B;&#x795E;&#x304B;&#x307F;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>30</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x4F0A;&#x85E4; &#x5E97;</name>\n        <floor>4F</floor>\n        <category>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</category>\n        <open_time>09:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>01331-1-9617</tel>\n        <description>&#x308F;&#x306E;&#x7A93;&#x307E;&#x3069;&#x304B;&#x3089;&#x6E67;&#x308F;&#x304F;&#x3088;&#x300D;&#x300C;&#x9DFA;&#x3055;&#x304E;&#x3092;&#x3057;&#x3088;&#x3046;&#x306A;&#x3001;&#x304A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3001;&#x307E;&#x305F;&#x5E7E;&#x4E07;&#x3044;&#x304F;&#x3064;&#x306A;&#x4E0A;&#x7740;&#x3046;&#x308F;&#x304E;&#x304C;&#x6765;&#x308B;&#x306E;&#x304C;&#x307C;&#x3046;&#x3063;&#x3068;&#x898B;&#x3048;&#x306A;&#x3044;&#x308B;&#x3093;&#x3060;&#x304B;&#x308F;&#x3082;&#x3001;&#x3082;&#x3046;&#x3058;&#x3083;&#x308A;&#x3093;&#x3054;&#x3092;&#x3080;&#x3044;&#x305F;&#x3061;&#x307E;&#x3046;&#x305D;&#x306E;&#x898B;&#x308B;&#x3068;&#x304D;&#x3001;&#x305D;&#x306E;&#x6CB3;&#x5CB8;&#x304B;&#x3044;&#x3069;&#x3066;&#x306B;&#x304A;&#x3053;&#x3063;&#x3061;&#x3092;&#x907F;&#x3055;&#x3051;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>31</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x4E2D;&#x6D25;&#x5DDD; &#x5E97;</name>\n        <floor>3F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>10:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>028-887-6473</tel>\n        <description>&#x307E;&#x3069;&#x306E;&#x5916;&#x3092;&#x898B;&#x307E;&#x3057;&#x305F;&#x3093;&#x3082;&#x304A;&#x307E;&#x3048;&#x306E;&#x3088;&#x300D;&#x30AB;&#x30E0;&#x30D1;&#x30CD;&#x30EB;&#x30E9;&#x306F;&#x304D;&#x306E;&#x3088;&#x3046;&#x3067;&#x306A;&#x3044;&#x3002;&#x53CC;&#x5B50;&#x3075;&#x305F;&#x3054;&#x306E;&#x304A;&#x3058;&#x304E;&#x3092;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x3001;&#x306A;&#x305C;&#x71C8;&#x53F0;&#x5B88;&#x3068;&#x3046;&#x306B;&#x3082;&#x3064;&#x3044;&#x305F;&#x3060;&#x304D;&#x306E;&#x706F;&#x3042;&#x304B;&#x307C;&#x3093;&#x3084;&#x308A;&#x3057;&#x3066;&#x307E;&#x305F;&#x601D;&#x308F;&#x305A;&#x304B;&#x306A;&#x305D;&#x3053;&#x3089;&#x3048;&#x3066;&#x3001;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x3082;&#x30AB;&#x30E0;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>32</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x5C0F;&#x6CC9; &#x5E97;</name>\n        <floor>2F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>09:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>0340-020-344</tel>\n        <description>&#x306E;&#x4E2D;&#x304C;&#x3075;&#x3089;&#x3068;&#x3082;&#x601D;&#x3044;&#x307E;&#x3057;&#x305F;&#x304C;&#x3001;&#x3053;&#x3053;&#x3067;&#x304A;&#x3044;&#x3066;&#x884C;&#x304D;&#x307E;&#x3057;&#x305F;&#x3002;&#x4E5D;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x9774;&#x304F;&#x3064;&#x304F;&#x3057;&#x305F;&#x3002;&#x5148;&#x751F;&#x306F;&#x3057;&#x3070;&#x3089;&#x304F;&#x86CD;&#x307B;&#x305F;&#x308B;&#x308F;&#x3001;&#x305F;&#x3060;&#x3044;&#x3066;&#x3044;&#x306A;&#x91CE;&#x539F;&#x3092;&#x898B;&#x3001;&#x307E;&#x308B;&#x3067;&#x5922;&#x4E2D;&#x3080;&#x3061;&#x3085;&#x3046;&#x3084;&#x3089;&#x3067;&#x3082;&#x898B;&#x3048;&#x308B;&#x304B;&#x3001;&#x3059;&#x3050;&#x773C;&#x3081;&#x304C;&#x3055;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;&#x5148;&#x751F;&#x306E;&#x8A00;&#x3044;&#x3044;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>33</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x4F0A;&#x85E4; &#x5E97;</name>\n        <floor>4F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>11:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>080-4512-7551</tel>\n        <description/>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>34</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x6C5F;&#x53E4;&#x7530; &#x5E97;</name>\n        <floor>3F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>09:00</open_time>\n        <close_time>22:00</close_time>\n        <tel/>\n        <description>&#x5589;&#x306E;&#x3069;&#x304F;&#x305D;&#x3046;&#x306B;&#x305D;&#x306E;&#x9ED2;&#x670D;&#x304F;&#x308D;&#x8CB7;&#x3044;&#x307E;&#x3069;&#x306E;&#x5916;&#x3092;&#x898B;&#x307E;&#x308F;&#x3057;&#x306B;&#x304A;&#x304F;&#x3078;&#x884C;&#x304F;&#x65B9;&#x304C;&#x305A;&#x3063;&#x3068;&#x904A;&#x3042;&#x305D;&#x3093;&#x306A;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x306E;&#x3067;&#x3059;&#x3002;&#x305D;&#x306E;&#x30DE;&#x30B8;&#x30A7;&#x30E9;&#x30F3;&#x306E;&#x661F;&#x306B;&#x898B;&#x3048;&#x307E;&#x305B;&#x3093;&#x3067;&#x3057;&#x305F;&#x3002;&#x307E;&#x3063;&#x3059;&#x3050;&#x304A;&#x7236;&#x3055;&#x3093;&#x304B;&#x304C;&#x3093;&#x300C;&#x304A;&#x307E;&#x3048;&#x306F;&#x3042;&#x308A;&#x307E;&#x3057;&#x305F;&#x3002;&#x305D;&#x3057;&#x3066;&#x8ECA;&#x306E;&#x306A;&#x304B;&#x3063;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>35</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x5C0F;&#x6797; &#x5E97;</name>\n        <floor>5F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>11:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>090-8250-7494</tel>\n        <description>&#x3093;&#x306E;&#x4E0A;&#x306F;&#x3093;&#x3092;&#x306E;&#x3070;&#x3057;&#x3092;&#x3061;&#x3087;&#x3046;&#x3060;&#x3044;&#x3066;&#x3044;&#x307E;&#x6D77;&#x3078;&#x884C;&#x3044;&#x3063;&#x3071;&#x3044;&#x3067;&#x3001;&#x6A9C;&#x3072;&#x306E;&#x304D;&#x308C;&#x3044;&#x3060;&#x306D;&#x3048;&#x3001;&#x6C7D;&#x8ECA;&#x3092;&#x8FFD;&#x304A;&#x3044;&#x3057;&#x3063;&#x304B;&#x308A;&#x306E;&#x5973;&#x306E;&#x5B50;&#x306F;&#x3050;&#x3063;&#x305F;&#x308D;&#x3046;&#x300D;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x3001;&#x307E;&#x308B;&#x3067;&#x6CE3;&#x306A;&#x304D;&#x51FA;&#x3057;&#x3066;&#x3001;&#x305D;&#x306E;&#x96FB;&#x71C8;&#x3067;&#x3093;&#x3068;&#x3046;&#x3068;&#x3001;&#x3082;&#x3061;&#x3092;&#x898B;&#x307E;&#x3057;&#x305F;&#x3002;&#x305D;&#x3057;&#x3066;&#x308B;&#x3093;&#x3060;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>36</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x5BAE;&#x6CA2; &#x5E97;</name>\n        <floor>4F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>09:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>0224-46-3369</tel>\n        <description>&#x3082;&#x9DFA;&#x3055;&#x304E;&#x3068;&#x3044;&#x3046;&#x306E;&#x9F20;&#x306D;&#x305A;&#x307F;&#x306E;&#x9593;&#x539F;&#x7A3F;&#x3052;&#x3093;&#x305C;&#x3093;&#x4E8C;&#x5343;&#x5C3A;&#x3058;&#x3083;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x305D;&#x3089;&#x306E;&#x6B4C;&#x3046;&#x3088;&#x3001;&#x7D00;&#x5143;&#x524D;&#x304D;&#x3052;&#x3093;&#x305C;&#x3093;&#x305F;&#x3044;&#x3068;&#x3044;&#x3046;&#x3075;&#x3046;&#x306B;&#x3057;&#x3087;&#x3093;&#x8DF3;&#x3068;&#x3093;&#x3067;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x300C;&#x3042;&#x306E;&#x3072;&#x3073;&#x304D;&#x3001;&#x7537;&#x306E;&#x5B50;&#x304C;&#x3044;&#x3068;&#x3053;&#x308D;&#x3078;&#x884C;&#x3063;&#x3066;&#x7ACB;&#x3063;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x300C;&#x30CF;&#x30EC;&#x30EB;&#x30E4;&#x300D;&#x524D;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>37</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x6C5F;&#x53E4;&#x7530; &#x5E97;</name>\n        <floor>B1F</floor>\n        <category>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</category>\n        <open_time>09:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>081-135-5644</tel>\n        <description>&#x3044;&#x307E;&#x3059;&#x306E;&#x304C;&#x307C;&#x3093;&#x3084;&#x9060;&#x304F;&#x3078;&#x6295;&#x306A;&#x3052;&#x3066;&#x3044;&#x308B;&#x306E;&#x3067;&#x3001;&#x307F;&#x3093;&#x306A;&#x306B;&#x306A;&#x308C;&#x307E;&#x3059;&#x3002;&#x3082;&#x3068;&#x3046;&#x306B;&#x3085;&#x3046;&#x3060;&#x3001;&#x307C;&#x304A;&#x3063;&#x3053;&#x3046;&#x5CB8;&#x304E;&#x3057;&#x306E;&#x65B9;&#x534A;&#x5206;&#x4EE5;&#x4E0A;&#x306F;&#x3093;&#x3092;&#x306E;&#x3070;&#x3057;&#x3089;&#x304C;&#x3044;&#x304D;&#x304A;&#x3044;&#x305F;&#x3080;&#x306E;&#x3092;&#x3072;&#x308D;&#x3052;&#x3001;&#x8033;&#x3092;&#x3059;&#x307E;&#x3057;&#x305F;&#x3002;&#x5411;&#x3080;&#x3053;&#x3046;&#x3078;&#x3084;&#x306B;&#x3084;&#x3055;&#x308C;&#x305F;&#x3082;&#x306E;&#x3092;&#x4E8C;&#x4EBA;&#x3075;&#x305F;&#x308A;&#x3001;&#x4E18;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>38</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x539F;&#x7530; &#x5E97;</name>\n        <floor>5F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>10:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>080-9130-4439</tel>\n        <description>&#x3044;&#x3044;&#x308D;&#x3044;&#x74B0;&#x308F;&#x306B;&#x306F;&#x3001;&#x3055;&#x3063;&#x304D;&#x3089;&#x3063;&#x304D;&#x308A;&#x306B;&#x7B11;&#x308F;&#x3089;&#x3044;&#x3066;&#x3044;&#x307E;&#x3069;&#x306E;&#x305D;&#x3089;&#x306B;&#x6D6E;&#x3046;&#x304B;&#x3093;&#x3067;&#x304B;&#x3059;&#x3093;&#x3067;&#x3059;&#x304B;&#x3089;&#x306D;&#x3001;&#x305D;&#x306E;&#x767D;&#x3044;&#x9280;&#x6CB3;&#x304E;&#x3093;&#x304C;&#x3059;&#x3050;&#x306B;&#x9032;&#x3059;&#x3059;&#x304D;&#x3068;&#x304A;&#x4F1A;&#x3044;&#x306B;&#x308F;&#x304B;&#x308C;&#x304C;&#x60DC;&#x304A;&#x3057;&#x307E;&#x3059;&#x3002;&#x304D;&#x3063;&#x3068;&#x305F;&#x3093;&#x305D;&#x3046;&#x306A;&#x7528;&#x3088;&#x3046;&#x306E;&#x82B1;&#x706B;&#x3067;&#x3044;&#x3063;&#x305F;&#x3068;&#x304D;&#x306F;&#x304D;&#x904A;&#x3042;&#x305D;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>39</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x52A0;&#x7D0D; &#x5E97;</name>\n        <floor>3F</floor>\n        <category>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</category>\n        <open_time>10:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>090-2131-8836</tel>\n        <description>&#x3082;&#x3046;&#x3054;&#x3056;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x300C;&#x3082;&#x3046;&#x6B69;&#x3044;&#x3066;&#x3044;&#x308B;&#x304B;&#x3057;&#x306A;&#x304C;&#x3089;&#x3093;&#x306A;&#x3068;&#x3053;&#x308D;&#x3078;&#x884C;&#x304F;&#x3072;&#x3087;&#x3046;&#x3001;&#x307B;&#x3093;&#x3068;&#x3046;&#x306B;&#x3072;&#x3068;&#x308A;&#x3068;&#x308A;&#x304C;&#x7A93;&#x307E;&#x3069;&#x304B;&#x3089;&#x3067;&#x3053;&#x3093;&#x3069;&#x3044;&#x3044;&#x3053;&#x3068;&#x3082;&#x3088;&#x3046;&#x306B;&#x3001;&#x305D;&#x306E;&#x58F0;&#x306F;&#x3072;&#x3073;&#x304D;&#x3068;&#x304A;&#x308A;&#x3066;&#x3001;&#x305D;&#x3053;&#x306E;&#x65B9;&#x3067;&#x8AB0;&#x3060;&#x308C;&#x3082;&#x3044;&#x306A;&#x304C;&#x3089;&#x3001;&#x304A;&#x3063;&#x3068;&#x305D;&#x308C;&#x304B;&#x3089;&#x898B;&#x3066;&#x3044;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>40</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x85E4;&#x672C; &#x5E97;</name>\n        <floor>2F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>09:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>0848-44-5192</tel>\n        <description>&#x3061;&#x3092;&#x51FA;&#x305D;&#x3046;&#x3058;&#x304D;&#x767D;&#x9CE5;&#x306E;&#x505C;&#x8ECA;&#x5834;&#x3066;&#x3044;&#x308B;&#x3002;&#x3060;&#x304B;&#x3089;&#x5C0F;&#x3055;&#x306A;&#x304A;&#x3057;&#x305F;&#x3002;&#x300C;&#x304D;&#x3063;&#x3068;&#x5411;&#x3080;&#x3053;&#x3046;&#x3075;&#x3046;&#x3067;&#x3057;&#x305F;&#x3002;&#x300C;&#x3082;&#x3046;&#x6642;&#x9593;&#x3067;&#x884C;&#x3053;&#x3046;&#x306E;&#x795E;&#x304B;&#x307F;&#x3055;&#x307E;&#x3054;&#x3089;&#x3093;&#x3060;&#x82F9;&#x679C;&#x308A;&#x3093;&#x306E;&#x65D7;&#x306F;&#x305F;&#x3092;&#x3042;&#x3052;&#x3001;&#x307E;&#x305F;&#x9CE5;&#x3092;&#x6355;&#x3068;&#x308B;&#x3093;&#x3067;&#x3059;&#x3088;&#x3046;&#x306B;&#x898B;&#x3048;&#x306A;&#x3044;&#x306E;&#x3067;&#x3059;&#x3002;&#x30AB;&#x30E0;&#x30D1;&#x30CD;&#x30EB;&#x30E9;&#x3002;</description>\n        <is_temporarily_closed>true</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>41</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x8FD1;&#x85E4; &#x5E97;</name>\n        <floor>5F</floor>\n        <category>&#x96D1;&#x8CA8;</category>\n        <open_time>08:00</open_time>\n        <close_time>22:00</close_time>\n        <tel/>\n        <description>&#x3048;&#x308B;&#x3068;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x304C;&#x7A93;&#x307E;&#x3069;&#x304B;&#x3089;&#x6D41;&#x306A;&#x304C;&#x3089;&#x3001;&#x8A0A;&#x304D;&#x3053;&#x3048;&#x308B;&#x3053;&#x3068;&#x306B;&#x77F3;&#x3067;&#x3053;&#x3089;&#x3048;&#x3066;&#x308B;&#x3060;&#x3051;&#x3069;&#x306D;&#x3048;&#x3002;&#x50D5;&#x307C;&#x304F;&#x305F;&#x3061;&#x306E;&#x304A;&#x306E;&#x3088;&#x3046;&#x306B;&#x54B2;&#x3055;&#x304D;&#x306B;&#x9ED2;&#x3044;&#x3064;&#x304B;&#x306A;&#x3044;&#x305F;&#x306E;&#x3067;&#x3082;&#x3053;&#x3063;&#x3061;&#x306E;&#x3042;&#x308B;&#x3002;&#x3051;&#x308C;&#x3069;&#x3082;&#x3001;&#x304A;&#x7236;&#x3055;&#x3093;&#x3068;&#x3046;&#x306B;&#x306A;&#x3063;&#x3066;&#x898B;&#x5206;&#x3051;&#x3066;&#x898B;&#x3066;&#x3044;&#x308B;&#x3088;&#x3046;&#x306A;&#x880D;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>42</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x4F50;&#x85E4; &#x5E97;</name>\n        <floor>3F</floor>\n        <category>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</category>\n        <open_time>10:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>0942-06-3943</tel>\n        <description/>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>43</id>\n        <name>&#x6709;&#x9650;&#x4F1A;&#x793E; &#x7B39;&#x7530; &#x5E97;</name>\n        <floor>B1F</floor>\n        <category>&#x96D1;&#x8CA8;</category>\n        <open_time>09:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>09538-0-0730</tel>\n        <description>&#x305F;&#x3065;&#x3051;&#x307E;&#x3057;&#x305F;&#x3002;&#x305D;&#x3053;&#x3089;&#x3058;&#x3085;&#x306E;&#x5411;&#x3080;&#x3053;&#x3046;&#x8A00;&#x3044;&#x3063;&#x305F;&#x3089;&#x3044;&#x3066;&#x3044;&#x308B;&#x3081;&#x3044;&#x3057;&#x3087;&#x3046;&#x304B;&#x3002;&#x7ACB;&#x6D3E;&#x308A;&#x3063;&#x3071;&#x3044;&#x3067;&#x3059;&#x306D;&#x3048;&#x3002;&#x3042;&#x3057;&#x3092;&#x304B;&#x3051;&#x3088;&#x3063;&#x304F;&#x3089;&#x3044;&#x53F0;&#x6240;&#x3060;&#x3044;&#x3082;&#x4E0D;&#x5BE9;&#x3075;&#x3057;&#x304E;&#x306A;&#x3093;&#x3060;&#x304B;&#x308F;&#x304B;&#x306B;&#x30AB;&#x30E0;&#x30D1;&#x30CD;&#x30EB;&#x30E9;&#x304C;&#x3059;&#x3050;&#x8FD1;&#x304F;&#x3067;&#x9CF4;&#x308A;&#x307E;&#x3057;&#x305F;&#x3002;&#x300C;&#x9CE5;&#x304C;&#x304A;&#x3063;&#x3066;&#x76E3;&#x7763;&#x304B;&#x3093;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>44</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x5C71;&#x5CB8; &#x5E97;</name>\n        <floor>1F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>11:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>03-3381-6993</tel>\n        <description>&#x51FA;&#x3059;&#x306E;&#x306F;&#x3089;&#x3058;&#x3085;&#x3046;&#x3084;&#x3046;&#x3057;&#x3066;&#x7A93;&#x307E;&#x3069;&#x306F;&#x307C;&#x3093;&#x3084;&#x308A;&#x3057;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x305D;&#x306E;&#x304D;&#x306E;&#x3073;&#x308B;&#x3092;&#x565B;&#x304B;&#x3093;&#x306E;&#x67F1;&#x306F;&#x3057;&#x306E;&#x4E0A;&#x306B;&#x306F;&#x719F;&#x3058;&#x3085;&#x3046;&#x304C;&#x7ACB;&#x3063;&#x3066;&#x304F;&#x308B;&#x3088;&#x3046;&#x3084;&#x4FE1;&#x53F7;&#x6A19;&#x3057;&#x3093;&#x3082;&#x56DB;&#x3064;&#x306B;&#x3064;&#x3044;&#x306E;&#x306B;&#x3001;&#x306C;&#x308C;&#x305F;&#x5E73;&#x3072;&#x3089;&#x3079;&#x3063;&#x305F;&#x3088;&#x3046;&#x306A;&#x3059;&#x3088;&#x3046;&#x306B;&#x3001;&#x9577;&#x9774;&#x306A;&#x304C;&#x3089;&#x3093;&#x306A;&#x306B;&#x304B;&#x304B;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>45</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x5B87;&#x91CE; &#x5E97;</name>\n        <floor>B1F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>09:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>090-4510-8545</tel>\n        <description>&#x3070;&#x3093;&#x306B;&#x3082;&#x3064;&#x3092;&#x306F;&#x3058;&#x3081;&#x305F;&#x305D;&#x3046;&#x306B;&#x3046;&#x3064;&#x304F;&#x306A;&#x300D;&#x3068;&#x3044;&#x3046;&#x3061;&#x3001;&#x3082;&#x3046;&#x305A;&#x306B;&#x51B7;&#x3064;&#x3081;&#x305F;&#x304F;&#x305D;&#x3046;&#x3002;&#x3051;&#x308C;&#x3069;&#x3082;&#x3001;&#x3082;&#x3046;&#x5927;&#x4E08;&#x592B;&#x3060;&#x3044;&#x3084;&#xFF09;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x3001;&#x300C;&#x3067;&#x306F;&#x4E8C;&#x3064;&#x306B;&#x3001;&#x773C;&#x3081;&#x3092;&#x3055;&#x304C;&#x3069;&#x3053;&#x307E;&#x304B;&#x306A;&#x3044;&#x306E;&#x3088;&#x3046;&#x306A;&#x3075;&#x3046;&#x3067;&#x3059;&#x304B;&#x3002;&#x3082;&#x3046;&#x3044;&#x308D;&#x304C;&#x3044;&#x3063;&#x3071;&#x306A;&#x5730;&#x5C64;&#x3061;&#x305D;&#x3046;&#x3068;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>46</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x77F3;&#x7530; &#x5E97;</name>\n        <floor>3F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>08:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>036-264-2457</tel>\n        <description>&#x3089;&#x308C;&#x3066;&#x5D16;&#x304C;&#x3051;&#x3068;&#x7DDA;&#x8DEF;&#x305B;&#x3093;&#x3067;&#x3057;&#x305F;&#x3002;&#x300C;&#x884C;&#x3063;&#x305F;&#x306E;&#x3088;&#x3046;&#x304C;&#x304B;&#x304C;&#x307E;&#x305F;&#x5225;&#x3079;&#x3064;&#x306E;&#x3061;&#x3087;&#x3046;&#x304C;&#x6765;&#x308B;&#x3088;&#x3046;&#x3059;&#x304F;&#x306A;&#x308A;&#x3001;&#x308F;&#x3042;&#x3044;&#x3044;&#x3002;&#x307F;&#x3093;&#x306A;&#x304C;&#x3089;&#x305F;&#x3044;&#x3088;&#x3046;&#x306A;&#x3082;&#x306E;&#x3092;&#x3001;&#x305D;&#x3063;&#x3061;&#x3092;&#x907F;&#x3055;&#x3051;&#x3076;&#x3063;&#x305F;&#x4E00;&#x3082;&#x308A;&#x3001;&#x3044;&#x3044;&#x307E;&#x5E30;&#x3063;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x96A3;&#x3068;&#x306A;&#x308A;&#x307E;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>47</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x4F50;&#x85E4; &#x5E97;</name>\n        <floor>5F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>09:00</open_time>\n        <close_time>20:00</close_time>\n        <tel>0420-888-975</tel>\n        <description>&#x6C17;&#x306A;&#x307E;&#x3063;&#x767D;&#x306A;&#x874B;&#x308D;&#x3046;&#x304B;&#x3002;&#x3053;&#x3053;&#x308D;&#x3082;&#x5C11;&#x3057;&#x4F38;&#x306E;&#x3073;&#x3042;&#x304C;&#x308A;&#x307E;&#x3057;&#x305F;&#x3002;&#x305D;&#x306E;&#x5730;&#x56F3;&#x3092;&#x3069;&#x3053;&#x308D;&#x306A;&#x56FD;&#x8A9E;&#x3067;&#x4E00;&#x307A;&#x3093;&#x707C;&#x3084;&#x3044;&#x305E;&#x3002;&#x50D5;&#x307C;&#x304F;&#x3089;&#x3068;&#x3061;&#x304C;&#x3044;&#x3063;&#x3071;&#x308A;&#x307C;&#x3093;&#x3084;&#x306E;&#x3051;&#x308B;&#x3088;&#x300D;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x4F55;&#x304B;&#x306E;&#x304B;&#x3001;&#x9B5A;&#x3058;&#x3083;&#x304F;&#x304B;&#x305F;&#x3061;&#x306F;&#x3057;&#x306F;&#x3059;&#x3063;&#x305F;&#x304F;&#x3055;&#x3093;&#x306F;&#x3001;&#x307E;&#x308B;&#x3067;&#x5922;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>48</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x5C71;&#x672C; &#x5E97;</name>\n        <floor>1F</floor>\n        <category>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</category>\n        <open_time>08:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>090-0935-4353</tel>\n        <description>&#x7D00;&#x5143;&#x524D;&#x304D;&#x3052;&#x3093;&#x3053;&#x3046;&#x3054;&#x304F;&#x3078;&#x6295;&#x306A;&#x3052;&#x307E;&#x3057;&#x305F;&#x304C;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x307F;&#x306A;&#x3055;&#x3044;&#x3002;&#x3063;&#x3066;&#x3082;&#x3088;&#x3046;&#x304C;&#x3053;&#x3089;&#x306F;&#x3001;&#x3064;&#x304B;&#x307E;&#x308F;&#x3063;&#x305F;&#x308A;&#x306F;&#x98A8;&#x304B;&#x6C34;&#x3084;&#x3001;&#x307E;&#x3063;&#x305F;&#x3068;&#x307F;&#x3092;&#x89E3;&#x3068;&#x3051;&#x308B;&#x3088;&#x3046;&#x306B;&#x898B;&#x3048;&#x305F;&#x3075;&#x308B;&#x3088;&#x3046;&#x306B;&#x304B;&#x306E;&#x4E0A;&#x3092;&#x3001;&#x4E00;&#x3005;&#x306E;&#x3056;&#x308F;&#x3056;&#x3068;&#x7A6B;&#x3068;&#x308C;&#x672C;&#x6C17;&#x306B;&#x624B;&#x3092;&#x632F;&#x3075;&#x3063;&#x305F;&#x308D;&#x3046;&#x3002;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>49</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x559C;&#x5D8B; &#x5E97;</name>\n        <floor>4F</floor>\n        <category>&#x30A2;&#x30DF;&#x30E5;&#x30FC;&#x30BA;&#x30E1;&#x30F3;&#x30C8;</category>\n        <open_time>09:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>01994-9-2384</tel>\n        <description>&#x308F;&#x3061;&#x661F;&#x304C;&#x3046;&#x3063;&#x305F;&#x3068;&#x3044;&#x3046;&#x306E;&#x3072;&#x3070;&#x306E;&#x3057;&#x308B;&#x3057;&#x306E;&#x65B9;&#x305F;&#x3061;&#x3084;&#x3053;&#x306E;&#x9801;&#x30DA;&#x30FC;&#x30B8;&#x3060;&#x3088;&#x300D;&#x300C;&#x3069;&#x3046;&#x3057;&#x3044;&#x7F8E;&#x3046;&#x3064;&#x3063;&#x3066;&#x884C;&#x304D;&#x307E;&#x3057;&#x305F;&#x3002;&#x300C;&#x306A;&#x306B;&#x554F;&#x3068;&#x3044;&#x3064;&#x304B;&#x3063;&#x305F;&#x306E;&#x3067;&#x3059;&#x3002;&#x305D;&#x306E;&#x4E2D;&#x306B;&#x300D;&#x300C;&#x880D;&#x3055;&#x305D;&#x308A;&#x304C;&#x305D;&#x306A;&#x308F;&#x3061;&#x661F;&#x304C;&#x3001;&#x306A;&#x3093;&#x304B;&#x3089;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x3001;&#x5341;&#x4E8C;&#x3070;&#x304B;&#x308A;&#x307E;&#x3048;&#x306F;&#x5316;&#x5B66;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>50</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x4E95;&#x9AD8; &#x5E97;</name>\n        <floor>1F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>08:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>093-839-0299</tel>\n        <description>&#x3085;&#x3046;&#x3058;&#x304B;&#x3089;&#x300D;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x7ACB;&#x3063;&#x3066;&#x306A;&#x3093;&#x305E;&#x3067;&#x3001;&#x3082;&#x3046;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x3064;&#x307E;&#x3063;&#x305F;&#x307E;&#x3048;&#x306B;&#x307F;&#x3093;&#x306A;&#x9854;&#x3092;&#x3057;&#x306A;&#x304C;&#x308C;&#x308B;&#x3088;&#x3046;&#x3060;&#x3044;&#x3084;&#x7DD1;&#x307F;&#x3069;&#x308A;&#x3044;&#x3044;&#x671B;&#x9060;&#x93E1;&#x307C;&#x3046;&#x3089;&#x3060;&#x306A;&#x306B;&#x6C38;&#x306A;&#x304C;&#x3089;&#x3093;&#x3067;&#x8D70;&#x308B;&#x6C7D;&#x8ECA;&#x306F;&#x3001;&#x660E;&#x308B;&#x304F;&#x308B;&#x304F;&#x6D41;&#x306A;&#x304C;&#x3089;&#x901A;&#x3063;&#x3066;&#x7A93;&#x307E;&#x3069;&#x304B;&#x3089;&#x3001;&#x305D;&#x306E;&#x3044;&#x3070;&#x3089;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>51</id>\n        <name>&#x30C6;&#x30B9;&#x30C8;&#x5E97;&#x8217;</name>\n        <floor>2F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>11:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>03-1234-5678</tel>\n        <description>&#x7F8E;&#x5473;&#x3057;&#x3044;&#x6599;&#x7406;&#x3092;&#x63D0;&#x4F9B;&#x3059;&#x308B;&#x304A;&#x5E97;&#x3067;&#x3059;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>52</id>\n        <name>&#x30C6;&#x30B9;&#x30C8;&#x5E97;&#x8217;2</name>\n        <floor>2F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>08:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>03-1234-5679</tel>\n        <description>&#x7F8E;&#x5473;&#x3057;&#x3044;&#x30B3;&#x30FC;&#x30D2;&#x30FC;&#x3092;&#x63D0;&#x4F9B;&#x3059;&#x308B;&#x304A;&#x5E97;&#x3067;&#x3059;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>53</id>\n        <name>&#x30C6;&#x30B9;&#x30C8;&#x5E97;&#x8217;2</name>\n        <floor>2F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>08:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>03-1234-5679</tel>\n        <description>&#x7F8E;&#x5473;&#x3057;&#x3044;&#x30B3;&#x30FC;&#x30D2;&#x30FC;&#x3092;&#x63D0;&#x4F9B;&#x3059;&#x308B;&#x304A;&#x5E97;&#x3067;&#x3059;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>54</id>\n        <name>&#x30C6;&#x30B9;&#x30C8;&#x5E97;&#x8217;</name>\n        <floor>2F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>08:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>03-1234-5680</tel>\n        <description>&#x7F8E;&#x5473;&#x3057;&#x3044;&#x3082;&#x306E;&#x3092;&#x63D0;&#x4F9B;&#x3059;&#x308B;&#x304A;&#x5E97;&#x3067;&#x3059;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>56</id>\n        <name>&#x30B5;&#x30F3;&#x30E9;&#x30A4;&#x30BA; &amp; &lt;&#x30AD;&#x30C3;&#x30C1;&#x30F3;&gt; &#x5E97;</name>\n        <floor>1F</floor>\n        <category>&#x30EC;&#x30B9;&#x30C8;&#x30E9;&#x30F3;&#x30FB;&#x30AB;&#x30D5;&#x30A7;</category>\n        <open_time>10:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>03-9999-9999</tel>\n        <description>&#x7279;&#x6B8A;&#x6587;&#x5B57;&#x306E;XML&#x30C6;&#x30B9;&#x30C8;&#x7528;&#x5E97;&#x8217;&#x3067;&#x3059;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n</shops>"
+            }
+          ]
+        },
+        {
+          "name": "floor / category 絞り込み",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/shops.xml?floor=1F&category=ファッション",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "shops.xml"
+              ],
+              "query": [
+                {
+                  "key": "floor",
+                  "value": "1F",
+                  "type": "text"
+                },
+                {
+                  "key": "category",
+                  "value": "ファッション",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "floor / category 絞り込み",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/api/v1/shops.xml?floor=1F&category=ファッション",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "shops.xml"
+                  ],
+                  "query": [
+                    {
+                      "key": "floor",
+                      "value": "1F"
+                    },
+                    {
+                      "key": "category",
+                      "value": "ファッション"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Host",
+                  "value": "127.0.0.1:8000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/8.5.7"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 08 Jun 2026 13:26:44 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/xml"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                }
+              ],
+              "cookie": [],
+              "body": "<?xml version=\"1.0\"?>\n<shops>\n    <shop>\n        <id>5</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x677E;&#x672C; &#x5E97;</name>\n        <floor>1F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>09:00</open_time>\n        <close_time>21:00</close_time>\n        <tel>080-2623-8162</tel>\n        <description>&#x300C;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306E;&#x304A;&#x3057;&#x305F;&#x3002;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306B;&#x306F;&#x305F;&#x3044;&#x3060;&#x308D;&#x3046;&#x3002;&#x305F;&#x3060;&#x304A;&#x3058;&#x304E;&#x3092;&#x305F;&#x3079;&#x308B;&#x306B;&#x3057;&#x3066;&#x305D;&#x306E;&#x5C0F;&#x3055;&#x306A;&#x5217;&#x8ECA;&#x308C;&#x3063;&#x3066;&#x3001;&#x624B;&#x3092;&#x5165;&#x308C;&#x3066;&#x3001;&#x96FB;&#x71C8;&#x3067;&#x3093;&#x3068;&#x3046;&#x300D;&#x4E8C;&#x4EBA;&#x3075;&#x305F;&#x308A;&#x304C;&#x5C04;&#x3055;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x79C1;&#x306F;&#x5FC5;&#x6B7B;&#x3072;&#x3063;&#x3071;&#x306A;&#x3053;&#x3068;&#x3082;&#x306E;&#x3092;&#x5F85;&#x307E;&#x3063;&#x3066;&#x3044;&#x308B;&#x3046;&#x3061;&#x306B;&#x306F;&#x719F;&#x3058;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n    <shop>\n        <id>50</id>\n        <name>&#x682A;&#x5F0F;&#x4F1A;&#x793E; &#x4E95;&#x9AD8; &#x5E97;</name>\n        <floor>1F</floor>\n        <category>&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</category>\n        <open_time>08:00</open_time>\n        <close_time>22:00</close_time>\n        <tel>093-839-0299</tel>\n        <description>&#x3085;&#x3046;&#x3058;&#x304B;&#x3089;&#x300D;&#x30B8;&#x30E7;&#x30D0;&#x30F3;&#x30CB;&#x306F;&#x7ACB;&#x3063;&#x3066;&#x306A;&#x3093;&#x305E;&#x3067;&#x3001;&#x3082;&#x3046;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x3064;&#x307E;&#x3063;&#x305F;&#x307E;&#x3048;&#x306B;&#x307F;&#x3093;&#x306A;&#x9854;&#x3092;&#x3057;&#x306A;&#x304C;&#x308C;&#x308B;&#x3088;&#x3046;&#x3060;&#x3044;&#x3084;&#x7DD1;&#x307F;&#x3069;&#x308A;&#x3044;&#x3044;&#x671B;&#x9060;&#x93E1;&#x307C;&#x3046;&#x3089;&#x3060;&#x306A;&#x306B;&#x6C38;&#x306A;&#x304C;&#x3089;&#x3093;&#x3067;&#x8D70;&#x308B;&#x6C7D;&#x8ECA;&#x306F;&#x3001;&#x660E;&#x308B;&#x304F;&#x308B;&#x304F;&#x6D41;&#x306A;&#x304C;&#x3089;&#x901A;&#x3063;&#x3066;&#x7A93;&#x307E;&#x3069;&#x304B;&#x3089;&#x3001;&#x305D;&#x306E;&#x3044;&#x3070;&#x3089;&#x3002;</description>\n        <is_temporarily_closed>false</is_temporarily_closed>\n    </shop>\n</shops>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
